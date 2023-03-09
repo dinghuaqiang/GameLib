@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: cc393e5203352704d91f612dff62b57d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: +EarB_CF_AF01
+    100002: +HairS_L_A01
+    100004: +HairS_L_A02
+    100006: +HairS_R_A01
+    100008: +HairS_R_A02
+    100010: Armature
+    100012: Body
+    100014: Chest
+    100016: Eye_L
+    100018: Eye_R
+    100020: Head
+    100022: Hips
+    100024: IndexFinger1_L
+    100026: IndexFinger1_R
+    100028: IndexFinger2_L
+    100030: IndexFinger2_R
+    100032: IndexFinger3_L
+    100034: IndexFinger3_R
+    100036: Left ankle
+    100038: Left arm
+    100040: Left elbow
+    100042: Left knee
+    100044: Left leg
+    100046: Left shoulder
+    100048: Left toe
+    100050: Left wrist
+    100052: LittleFinger1_L
+    100054: LittleFinger1_R
+    100056: LittleFinger2_L
+    100058: LittleFinger2_R
+    100060: LittleFinger3_L
+    100062: LittleFinger3_R
+    100064: MiddleFinger1_L
+    100066: MiddleFinger1_R
+    100068: MiddleFinger2_L
+    100070: MiddleFinger2_R
+    100072: MiddleFinger3_L
+    100074: MiddleFinger3_R
+    100076: Neck
+    100078: //RootNode
+    100080: PF_0_0
+    100082: PF_0_1
+    100084: PF_0_2
+    100086: PF_0_4
+    100088: PF_0_5
+    100090: PF_1_0
+    100092: PF_1_1
+    100094: PF_1_2
+    100096: PF_1_3
+    100098: PF_1_4
+    100100: PF_1_5
+    100102: PF_2_0
+    100104: PF_2_1
+    100106: PF_2_2
+    100108: PF_2_3
+    100110: PF_2_4
+    100112: PF_2_5
+    100114: PF_3_0
+    100116: PF_3_1
+    100118: PF_3_2
+    100120: PF_3_3
+    100122: PF_3_4
+    100124: PF_3_5
+    100126: PF_4_0
+    100128: PF_4_1
+    100130: PF_4_2
+    100132: PF_4_3
+    100134: PF_4_4
+    100136: PF_4_5
+    100138: PF_5_0
+    100140: PF_5_1
+    100142: PF_5_2
+    100144: PF_5_3
+    100146: PF_5_4
+    100148: PF_5_5
+    100150: PF_6_1
+    100152: PF_6_2
+    100154: PF_6_3
+    100156: PF_6_4
+    100158: PF_6_5
+    100160: PF_7_0
+    100162: PF_7_1
+    100164: PF_7_2
+    100166: PF_7_3
+    100168: PF_7_4
+    100170: PF_8_0
+    100172: PF_8_1
+    100174: PF_8_2
+    100176: PF_8_3
+    100178: PF_8_4
+    100180: Right ankle
+    100182: Right arm
+    100184: Right elbow
+    100186: Right knee
+    100188: Right leg
+    100190: Right shoulder
+    100192: Right toe
+    100194: Right wrist
+    100196: RingFinger1_L
+    100198: RingFinger1_R
+    100200: RingFinger2_L
+    100202: RingFinger2_R
+    100204: RingFinger3_L
+    100206: RingFinger3_R
+    100208: Spine
+    100210: Thumb0_L
+    100212: Thumb0_R
+    100214: Thumb1_L
+    100216: Thumb1_R
+    100218: Thumb2_L
+    100220: Thumb2_R
+    100222: zArmTwist_L
+    100224: zArmTwist_R
+    100226: zHandTwist_L
+    100228: zHandTwist_R
+    400000: +EarB_CF_AF01
+    400002: +HairS_L_A01
+    400004: +HairS_L_A02
+    400006: +HairS_R_A01
+    400008: +HairS_R_A02
+    400010: Armature
+    400012: Body
+    400014: Chest
+    400016: Eye_L
+    400018: Eye_R
+    400020: Head
+    400022: Hips
+    400024: IndexFinger1_L
+    400026: IndexFinger1_R
+    400028: IndexFinger2_L
+    400030: IndexFinger2_R
+    400032: IndexFinger3_L
+    400034: IndexFinger3_R
+    400036: Left ankle
+    400038: Left arm
+    400040: Left elbow
+    400042: Left knee
+    400044: Left leg
+    400046: Left shoulder
+    400048: Left toe
+    400050: Left wrist
+    400052: LittleFinger1_L
+    400054: LittleFinger1_R
+    400056: LittleFinger2_L
+    400058: LittleFinger2_R
+    400060: LittleFinger3_L
+    400062: LittleFinger3_R
+    400064: MiddleFinger1_L
+    400066: MiddleFinger1_R
+    400068: MiddleFinger2_L
+    400070: MiddleFinger2_R
+    400072: MiddleFinger3_L
+    400074: MiddleFinger3_R
+    400076: Neck
+    400078: //RootNode
+    400080: PF_0_0
+    400082: PF_0_1
+    400084: PF_0_2
+    400086: PF_0_4
+    400088: PF_0_5
+    400090: PF_1_0
+    400092: PF_1_1
+    400094: PF_1_2
+    400096: PF_1_3
+    400098: PF_1_4
+    400100: PF_1_5
+    400102: PF_2_0
+    400104: PF_2_1
+    400106: PF_2_2
+    400108: PF_2_3
+    400110: PF_2_4
+    400112: PF_2_5
+    400114: PF_3_0
+    400116: PF_3_1
+    400118: PF_3_2
+    400120: PF_3_3
+    400122: PF_3_4
+    400124: PF_3_5
+    400126: PF_4_0
+    400128: PF_4_1
+    400130: PF_4_2
+    400132: PF_4_3
+    400134: PF_4_4
+    400136: PF_4_5
+    400138: PF_5_0
+    400140: PF_5_1
+    400142: PF_5_2
+    400144: PF_5_3
+    400146: PF_5_4
+    400148: PF_5_5
+    400150: PF_6_1
+    400152: PF_6_2
+    400154: PF_6_3
+    400156: PF_6_4
+    400158: PF_6_5
+    400160: PF_7_0
+    400162: PF_7_1
+    400164: PF_7_2
+    400166: PF_7_3
+    400168: PF_7_4
+    400170: PF_8_0
+    400172: PF_8_1
+    400174: PF_8_2
+    400176: PF_8_3
+    400178: PF_8_4
+    400180: Right ankle
+    400182: Right arm
+    400184: Right elbow
+    400186: Right knee
+    400188: Right leg
+    400190: Right shoulder
+    400192: Right toe
+    400194: Right wrist
+    400196: RingFinger1_L
+    400198: RingFinger1_R
+    400200: RingFinger2_L
+    400202: RingFinger2_R
+    400204: RingFinger3_L
+    400206: RingFinger3_R
+    400208: Spine
+    400210: Thumb0_L
+    400212: Thumb0_R
+    400214: Thumb1_L
+    400216: Thumb1_R
+    400218: Thumb2_L
+    400220: Thumb2_R
+    400222: zArmTwist_L
+    400224: zArmTwist_R
+    400226: zHandTwist_L
+    400228: zHandTwist_R
+    2100000: "\u8138.006"
+    2100002: "\u5934\u53D1.007"
+    2100004: "\u76AE\u80A4.008"
+    2100006: "\u8863\u670D.008"
+    2100008: "\u62AB\u98CE.002"
+    2100010: "\u8868\u60C5.007"
+    4300000: Body
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Body
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

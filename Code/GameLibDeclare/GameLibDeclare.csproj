@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F868334D-BB5E-4CEF-BCA4-6D228877B6E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameLibDeclare</RootNamespace>
+    <AssemblyName>GameLibDeclare</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assets\Plugins\References\GameLibDeclare\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_ANDROID;UNITY_IPHONE;UNITY_STANDALONE_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;UNITY_ANDROID;UNITY_IPHONE;UNITY_STANDALONE_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Android|AnyCPU'">
+    <OutputPath>..\bin\Android\</OutputPath>
+    <DefineConstants>TRACE;UNITY_ANDROID;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IOS|AnyCPU'">
+    <OutputPath>..\bin\IOS\</OutputPath>
+    <DefineConstants>TRACE;UNITY_IPHONE;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IOS_EDITOR|AnyCPU'">
+    <OutputPath>..\bin\IOS_EDITOR\</OutputPath>
+    <DefineConstants>TRACE;UNITY_IPHONE;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Android_Editor|AnyCPU'">
+    <OutputPath>..\bin\Android_Editor\</OutputPath>
+    <DefineConstants>TRACE;UNITY_ANDROID;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'STANDALONE_WIN|AnyCPU'">
+    <OutputPath>..\bin\StandaloneWindows\</OutputPath>
+    <DefineConstants>TRACE;UNITY_STANDALONE_WIN</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Android_Profiler|AnyCPU'">
+    <OutputPath>..\bin\Android_Profiler\</OutputPath>
+    <DefineConstants>TRACE;UNITY_ANDROID;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CustomDataStruct\BetterDelegate.cs" />
+    <Compile Include="CustomDataStruct\BetterIPEndPoint.cs" />
+    <Compile Include="CustomDataStruct\BetterLinkedList.cs" />
+    <Compile Include="CustomDataStruct\BetterLinkedListNode.cs" />
+    <Compile Include="CustomDataStruct\BetterStringBuilder.cs" />
+    <Compile Include="CustomDataStruct\DelegateAction.cs" />
+    <Compile Include="CustomDataStruct\Helper.cs" />
+    <Compile Include="CustomDataStruct\MemoryLeakDetecter.cs" />
+    <Compile Include="CustomDataStruct\ObjPool.cs" />
+    <Compile Include="CustomDataStruct\StreamBufferPool.cs" />
+    <Compile Include="CustomDataStruct\ValueObject.cs" />
+    <Compile Include="Events\HanderDefine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="protobuf-net\IExtensible.cs" />
+    <Compile Include="protobuf-net\IExtension.cs" />
+    <Compile Include="protobuf-net\WireType.cs" />
+    <Compile Include="protobuf-net\Custom\CustomSetting.cs" />
+    <Compile Include="protobuf-net\Custom\ICustomProtoSerializer.cs" />
+    <Compile Include="Source\AnimClipNameDefine.cs" />
+    <Compile Include="Source\BiDefine.cs" />
+    <Compile Include="Source\DeclareAchievement.cs" />
+    <Compile Include="Source\DeclareAchievementType.cs" />
+    <Compile Include="Source\DeclareActiveWeek.cs" />
+    <Compile Include="Source\DeclareActivityNotice.cs" />
+    <Compile Include="Source\DeclareActivityTaskType.cs" />
+    <Compile Include="Source\DeclareActivityYunying.cs" />
+    <Compile Include="Source\DeclareAmulet.cs" />
+    <Compile Include="Source\DeclareAmuletCondition.cs" />
+    <Compile Include="Source\DeclareAnimClipName.cs" />
+    <Compile Include="Source\DeclareAttributeAdd.cs" />
+    <Compile Include="Source\DeclareAuctionCareMenu.cs" />
+    <Compile Include="Source\DeclareAuctionMenu.cs" />
+    <Compile Include="Source\DeclareBagGrid.cs" />
+    <Compile Include="Source\DeclareBi.cs" />
+    <Compile Include="Source\DeclareBossFirstBlood.cs" />
+    <Compile Include="Source\DeclareBossHome.cs" />
+    <Compile Include="Source\DeclareBossnewHorseBoss.cs" />
+    <Compile Include="Source\DeclareBossnewPersonal.cs" />
+    <Compile Include="Source\DeclareBossnewSoulBeasts.cs" />
+    <Compile Include="Source\DeclareBossnewWorld.cs" />
+    <Compile Include="Source\DeclareBossstate.cs" />
+    <Compile Include="Source\DeclareBuff.cs" />
+    <Compile Include="Source\DeclareChallengeReward.cs" />
+    <Compile Include="Source\DeclareChangejob.cs" />
+    <Compile Include="Source\DeclareChangeModel.cs" />
+    <Compile Include="Source\DeclareCharacters.cs" />
+    <Compile Include="Source\DeclareCloneDaneng.cs" />
+    <Compile Include="Source\DeclareCloneLevel.cs" />
+    <Compile Include="Source\DeclareCloneMap.cs" />
+    <Compile Include="Source\DeclareCloneXinmo.cs" />
+    <Compile Include="Source\DeclareConvoyGirl.cs" />
+    <Compile Include="Source\DeclareCrossAlienBoss.cs" />
+    <Compile Include="Source\DeclareCrossAlienConnect.cs" />
+    <Compile Include="Source\DeclareCrossAlienConnectShow.cs" />
+    <Compile Include="Source\DeclareCrossAlienGemBoss.cs" />
+    <Compile Include="Source\DeclareCrossAlienGemCopy.cs" />
+    <Compile Include="Source\DeclareCrossDevilBoss.cs" />
+    <Compile Include="Source\DeclareCrossDevilCardBreak.cs" />
+    <Compile Include="Source\DeclareCrossDevilCardCamp.cs" />
+    <Compile Include="Source\DeclareCrossDevilCardMain.cs" />
+    <Compile Include="Source\DeclareCrossDevilCardSynthesis.cs" />
+    <Compile Include="Source\DeclareCrossDevilCardTrain.cs" />
+    <Compile Include="Source\DeclareCrossDevilGroupBoss.cs" />
+    <Compile Include="Source\DeclareCrossDevilGroupCopy.cs" />
+    <Compile Include="Source\DeclareCrossDevilGroupRank.cs" />
+    <Compile Include="Source\DeclareCrossDevilHuntHot.cs" />
+    <Compile Include="Source\DeclareCrossDevilHuntPool.cs" />
+    <Compile Include="Source\DeclareCrossDevilHuntPop.cs" />
+    <Compile Include="Source\DeclareCrossFudiBoss.cs" />
+    <Compile Include="Source\DeclareCrossFudiHoldReward.cs" />
+    <Compile Include="Source\DeclareCrossFudiMain.cs" />
+    <Compile Include="Source\DeclareCrossFudiScoreReward.cs" />
+    <Compile Include="Source\DeclareDaily.cs" />
+    <Compile Include="Source\DeclareDailyRechargeGift.cs" />
+    <Compile Include="Source\DeclareDailyReward.cs" />
+    <Compile Include="Source\DeclareDeviceMatchConfig.cs" />
+    <Compile Include="Source\DeclareEightCity.cs" />
+    <Compile Include="Source\DeclareEightCityReward.cs" />
+    <Compile Include="Source\DeclareEquip.cs" />
+    <Compile Include="Source\DeclareEquipCollection.cs" />
+    <Compile Include="Source\DeclareEquipCollectionModel.cs" />
+    <Compile Include="Source\DeclareEquipCollectionStar.cs" />
+    <Compile Include="Source\DeclareEquipCollectionStart.cs" />
+    <Compile Include="Source\DeclareEquipHolyLevelup.cs" />
+    <Compile Include="Source\DeclareEquipHolyResolve.cs" />
+    <Compile Include="Source\DeclareEquipHolySuit.cs" />
+    <Compile Include="Source\DeclareEquipHolySynthesis.cs" />
+    <Compile Include="Source\DeclareEquipHolyType.cs" />
+    <Compile Include="Source\DeclareEquipIntenClass.cs" />
+    <Compile Include="Source\DeclareEquipIntenMain.cs" />
+    <Compile Include="Source\DeclareEquipMagicResolve.cs" />
+    <Compile Include="Source\DeclareEquipMagicSuit.cs" />
+    <Compile Include="Source\DeclareEquipMagicSynthesis.cs" />
+    <Compile Include="Source\DeclareEquipResolve.cs" />
+    <Compile Include="Source\DeclareEquipShenpinSynthesis.cs" />
+    <Compile Include="Source\DeclareEquipSuit.cs" />
+    <Compile Include="Source\DeclareEquipSynthesis.cs" />
+    <Compile Include="Source\DeclareEquipXianjiaExchange.cs" />
+    <Compile Include="Source\DeclareEquipXianjiaSuit.cs" />
+    <Compile Include="Source\DeclareEquipXianjiaSynthesis.cs" />
+    <Compile Include="Source\DeclareFallingSkyLevel.cs" />
+    <Compile Include="Source\DeclareFallingSkyTask.cs" />
+    <Compile Include="Source\DeclareFallingSkyTwoLevel.cs" />
+    <Compile Include="Source\DeclareFallingSkyTwoTask.cs" />
+    <Compile Include="Source\DeclareFashion.cs" />
+    <Compile Include="Source\DeclareFashionLink.cs" />
+    <Compile Include="Source\DeclareFashionTotal.cs" />
+    <Compile Include="Source\DeclareFaxingsucai.cs" />
+    <Compile Include="Source\DeclareFBOpenShow.cs" />
+    <Compile Include="Source\DeclareFlySwordGrave.cs" />
+    <Compile Include="Source\DeclareFreeNewshop.cs" />
+    <Compile Include="Source\DeclareFreeShop.cs" />
+    <Compile Include="Source\DeclareFunctionNotice.cs" />
+    <Compile Include="Source\DeclareFunctionOpen.cs" />
+    <Compile Include="Source\DeclareFunctionOpenTips.cs" />
+    <Compile Include="Source\DeclareFunctionStart.cs" />
+    <Compile Include="Source\DeclareFunctionVariable.cs" />
+    <Compile Include="Source\DeclareGather.cs" />
+    <Compile Include="Source\DeclareGemGrade.cs" />
+    <Compile Include="Source\DeclareGemRefining.cs" />
+    <Compile Include="Source\DeclareGemstoneInlay.cs" />
+    <Compile Include="Source\DeclareGlobal.cs" />
+    <Compile Include="Source\DeclareGodWeaponLevel.cs" />
+    <Compile Include="Source\DeclareGodWeaponModel.cs" />
+    <Compile Include="Source\DeclareGodWeaponQuality.cs" />
+    <Compile Include="Source\DeclareGodWeaponSuit.cs" />
+    <Compile Include="Source\DeclareGroundBuff.cs" />
+    <Compile Include="Source\DeclareGuide.cs" />
+    <Compile Include="Source\DeclareGuideItem.cs" />
+    <Compile Include="Source\DeclareGuideWarNewbie.cs" />
+    <Compile Include="Source\DeclareGuildBattleBoss.cs" />
+    <Compile Include="Source\DeclareGuildBattleFinalAdd.cs" />
+    <Compile Include="Source\DeclareGuildBattleFinalReward.cs" />
+    <Compile Include="Source\DeclareGuildBattleRewardChange.cs" />
+    <Compile Include="Source\DeclareGuildBattleScore.cs" />
+    <Compile Include="Source\DeclareGuildBossReward.cs" />
+    <Compile Include="Source\DeclareGuildCollege.cs" />
+    <Compile Include="Source\DeclareGuildGift.cs" />
+    <Compile Include="Source\DeclareGuildOfficial.cs" />
+    <Compile Include="Source\DeclareGuildTitle.cs" />
+    <Compile Include="Source\DeclareGuildTreasure.cs" />
+    <Compile Include="Source\DeclareGuildUp.cs" />
+    <Compile Include="Source\DeclareGuildWarBuilding.cs" />
+    <Compile Include="Source\DeclareGuildWarContkill.cs" />
+    <Compile Include="Source\DeclareGuildWarPoints.cs" />
+    <Compile Include="Source\DeclareGuildWarRank.cs" />
+    <Compile Include="Source\DeclareGuildWarReward.cs" />
+    <Compile Include="Source\DeclareGuildWarRewardpreview.cs" />
+    <Compile Include="Source\DeclareHallFame.cs" />
+    <Compile Include="Source\DeclareHappyWeek.cs" />
+    <Compile Include="Source\DeclareHelp.cs" />
+    <Compile Include="Source\DeclareHorseEquipInten.cs" />
+    <Compile Include="Source\DeclareHorseEquipIntenClass.cs" />
+    <Compile Include="Source\DeclareHorseEquipResolve.cs" />
+    <Compile Include="Source\DeclareHorseEquipScore.cs" />
+    <Compile Include="Source\DeclareHorseEquipSoulbound.cs" />
+    <Compile Include="Source\DeclareHorseEquipSoulboundClass.cs" />
+    <Compile Include="Source\DeclareHorseEquipSynthesis.cs" />
+    <Compile Include="Source\DeclareHorseEquipUnlock.cs" />
+    <Compile Include="Source\DeclareHuaxingfabao.cs" />
+    <Compile Include="Source\DeclareHuaxingFlySword.cs" />
+    <Compile Include="Source\DeclareHuaxingFlySwordAdvanced.cs" />
+    <Compile Include="Source\DeclareHuaxingFlySwordLevelup.cs" />
+    <Compile Include="Source\DeclareHuaxingFlySwordSkill.cs" />
+    <Compile Include="Source\DeclareHuaxingHorse.cs" />
+    <Compile Include="Source\DeclareHuaxingMagic.cs" />
+    <Compile Include="Source\DeclareHuaxingTalisman.cs" />
+    <Compile Include="Source\DeclareHuaxingWeapon.cs" />
+    <Compile Include="Source\DeclareHuaxingWing.cs" />
+    <Compile Include="Source\DeclareImmortalSoulAttribute.cs" />
+    <Compile Include="Source\DeclareImmortalSoulCore.cs" />
+    <Compile Include="Source\DeclareImmortalSoulCoreAtt.cs" />
+    <Compile Include="Source\DeclareImmortalSoulExp.cs" />
+    <Compile Include="Source\DeclareImmortalSoulHunt.cs" />
+    <Compile Include="Source\DeclareImmortalSoulIattice.cs" />
+    <Compile Include="Source\DeclareImmortalSoulSynthesis.cs" />
+    <Compile Include="Source\DeclareInvest.cs" />
+    <Compile Include="Source\DeclareInvestGlobal.cs" />
+    <Compile Include="Source\DeclareInvestLevel.cs" />
+    <Compile Include="Source\DeclareInvestPeak.cs" />
+    <Compile Include="Source\DeclareInvestPeakGlobal.cs" />
+    <Compile Include="Source\DeclareInvestPeakLevel.cs" />
+    <Compile Include="Source\DeclareItem.cs" />
+    <Compile Include="Source\DeclareItemChangeReason.cs" />
+    <Compile Include="Source\DeclareItemGift.cs" />
+    <Compile Include="Source\DeclareItemSpecialGift.cs" />
+    <Compile Include="Source\DeclareJJCAeward.cs" />
+    <Compile Include="Source\DeclareJJCRank.cs" />
+    <Compile Include="Source\DeclareKaoShangLingHorse.cs" />
+    <Compile Include="Source\DeclareLeaderPreach.cs" />
+    <Compile Include="Source\DeclareLeaderPreachValue.cs" />
+    <Compile Include="Source\DeclareLevelReward.cs" />
+    <Compile Include="Source\DeclareLimitDirectShop.cs" />
+    <Compile Include="Source\DeclareLimitGoldShop.cs" />
+    <Compile Include="Source\DeclareLimitMysteryShop.cs" />
+    <Compile Include="Source\DeclareLimitShop.cs" />
+    <Compile Include="Source\DeclareManorScore.cs" />
+    <Compile Include="Source\DeclareMapsetting.cs" />
+    <Compile Include="Source\DeclareMarryActivityBless.cs" />
+    <Compile Include="Source\DeclareMarryActivityRank.cs" />
+    <Compile Include="Source\DeclareMarryActivityShop.cs" />
+    <Compile Include="Source\DeclareMarryActivityTask.cs" />
+    <Compile Include="Source\DeclareMarryBattleExchange.cs" />
+    <Compile Include="Source\DeclareMarryBattleReward.cs" />
+    <Compile Include="Source\DeclareMarryBattleTime.cs" />
+    <Compile Include="Source\DeclareMarryChild.cs" />
+    <Compile Include="Source\DeclareMarryChildAtt.cs" />
+    <Compile Include="Source\DeclareMarryDinner.cs" />
+    <Compile Include="Source\DeclareMarryLock.cs" />
+    <Compile Include="Source\DeclareMarryOrder.cs" />
+    <Compile Include="Source\DeclareMarryShop.cs" />
+    <Compile Include="Source\DeclareMarryShow.cs" />
+    <Compile Include="Source\DeclareMarryTitle.cs" />
+    <Compile Include="Source\DeclareMarryWall.cs" />
+    <Compile Include="Source\DeclareMessageString.cs" />
+    <Compile Include="Source\DeclareModelConfig.cs" />
+    <Compile Include="Source\DeclareMonster.cs" />
+    <Compile Include="Source\DeclareMonsterTalk.cs" />
+    <Compile Include="Source\DeclareMonthCard.cs" />
+    <Compile Include="Source\DeclareNatureAtt.cs" />
+    <Compile Include="Source\DeclareNatureHorse.cs" />
+    <Compile Include="Source\DeclareNatureMagic.cs" />
+    <Compile Include="Source\DeclareNatureTalisman.cs" />
+    <Compile Include="Source\DeclareNatureWeapon.cs" />
+    <Compile Include="Source\DeclareNatureWing.cs" />
+    <Compile Include="Source\DeclareNewActiveAdvantage.cs" />
+    <Compile Include="Source\DeclareNewRedPacket.cs" />
+    <Compile Include="Source\DeclareNewSeverActive.cs" />
+    <Compile Include="Source\DeclareNewSeverExchange.cs" />
+    <Compile Include="Source\DeclareNewSeverGrowup.cs" />
+    <Compile Include="Source\DeclareNewSeverGrowuprew.cs" />
+    <Compile Include="Source\DeclareNewSeverLuckcard.cs" />
+    <Compile Include="Source\DeclareNewSeverRank.cs" />
+    <Compile Include="Source\DeclareNewSeverRankrew.cs" />
+    <Compile Include="Source\DeclareNpc.cs" />
+    <Compile Include="Source\DeclareNpcFriend.cs" />
+    <Compile Include="Source\DeclareNpcFriendTalk.cs" />
+    <Compile Include="Source\DeclareOccPassiveShow.cs" />
+    <Compile Include="Source\DeclareOccSkill.cs" />
+    <Compile Include="Source\DeclareOnHookC.cs" />
+    <Compile Include="Source\DeclarePeakBattleJoinReward.cs" />
+    <Compile Include="Source\DeclarePeakBattleRank.cs" />
+    <Compile Include="Source\DeclarePeakBattleStage.cs" />
+    <Compile Include="Source\DeclarePet.cs" />
+    <Compile Include="Source\DeclarePetEquipInten.cs" />
+    <Compile Include="Source\DeclarePetEquipIntenClass.cs" />
+    <Compile Include="Source\DeclarePetEquipResolve.cs" />
+    <Compile Include="Source\DeclarePetEquipSoulbound.cs" />
+    <Compile Include="Source\DeclarePetEquipSoulboundClass.cs" />
+    <Compile Include="Source\DeclarePetEquipSynthesis.cs" />
+    <Compile Include="Source\DeclarePetEquipUnlock.cs" />
+    <Compile Include="Source\DeclarePetLevel.cs" />
+    <Compile Include="Source\DeclarePetRank.cs" />
+    <Compile Include="Source\DeclarePetSoul.cs" />
+    <Compile Include="Source\DeclarePlayerOccupation.cs" />
+    <Compile Include="Source\DeclarePlayerShiHai.cs" />
+    <Compile Include="Source\DeclarePray.cs" />
+    <Compile Include="Source\DeclarePrayCost.cs" />
+    <Compile Include="Source\DeclarePreload.cs" />
+    <Compile Include="Source\DeclareQqLevelReward.cs" />
+    <Compile Include="Source\DeclareQuestion.cs" />
+    <Compile Include="Source\DeclareRandomName.cs" />
+    <Compile Include="Source\DeclareRankAwardItem.cs" />
+    <Compile Include="Source\DeclareRankAwardType.cs" />
+    <Compile Include="Source\DeclareRankBase.cs" />
+    <Compile Include="Source\DeclareRankCompare.cs" />
+    <Compile Include="Source\DeclareRechargeAward.cs" />
+    <Compile Include="Source\DeclareRechargeConsumptionList.cs" />
+    <Compile Include="Source\DeclareRechargeDaily.cs" />
+    <Compile Include="Source\DeclareRechargeDailyCangzhenge.cs" />
+    <Compile Include="Source\DeclareRechargeDailyDuibaodian.cs" />
+    <Compile Include="Source\DeclareRechargeDailySuperreward.cs" />
+    <Compile Include="Source\DeclareRelive.cs" />
+    <Compile Include="Source\DeclareRetrieveRes.cs" />
+    <Compile Include="Source\DeclareRobotChat.cs" />
+    <Compile Include="Source\DeclareRollDodge.cs" />
+    <Compile Include="Source\DeclareSceneLoadConfig.cs" />
+    <Compile Include="Source\DeclareScreenEffect.cs" />
+    <Compile Include="Source\DeclareSdkplatform.cs" />
+    <Compile Include="Source\DeclareSevendayLogin.cs" />
+    <Compile Include="Source\DeclareShare.cs" />
+    <Compile Include="Source\DeclareShopMaket.cs" />
+    <Compile Include="Source\DeclareShopMenu.cs" />
+    <Compile Include="Source\DeclareSignReward.cs" />
+    <Compile Include="Source\DeclareSignRewardCumulative.cs" />
+    <Compile Include="Source\DeclareSignRewardsupplement.cs" />
+    <Compile Include="Source\DeclareSkill.cs" />
+    <Compile Include="Source\DeclareSkillMeridianNew.cs" />
+    <Compile Include="Source\DeclareSkillMeridianPos.cs" />
+    <Compile Include="Source\DeclareSkillOderPos.cs" />
+    <Compile Include="Source\DeclareSkillPositionLevelup.cs" />
+    <Compile Include="Source\DeclareSkillStarLevelup.cs" />
+    <Compile Include="Source\DeclareSocialDecorate.cs" />
+    <Compile Include="Source\DeclareSocialHouse.cs" />
+    <Compile Include="Source\DeclareSocialHouseFurniture.cs" />
+    <Compile Include="Source\DeclareSocialHouseGift.cs" />
+    <Compile Include="Source\DeclareSocialHouseLevel.cs" />
+    <Compile Include="Source\DeclareSocialHouseMarket.cs" />
+    <Compile Include="Source\DeclareSocialHouseRank.cs" />
+    <Compile Include="Source\DeclareSocialHouseTask.cs" />
+    <Compile Include="Source\DeclareSoulArmorAwaken.cs" />
+    <Compile Include="Source\DeclareSoulArmorAwakenSkill.cs" />
+    <Compile Include="Source\DeclareSoulArmorBreach.cs" />
+    <Compile Include="Source\DeclareSoulArmorEquipSynthesis.cs" />
+    <Compile Include="Source\DeclareSoulArmorLevelUp.cs" />
+    <Compile Include="Source\DeclareSoulArmorSignetHole.cs" />
+    <Compile Include="Source\DeclareSoulArmorSignetIntensify.cs" />
+    <Compile Include="Source\DeclareSoulArmorSignetLottery.cs" />
+    <Compile Include="Source\DeclareSoulArmorSignetLotteryObject.cs" />
+    <Compile Include="Source\DeclareSoulArmorSignetSuit.cs" />
+    <Compile Include="Source\DeclareSoulBeasts.cs" />
+    <Compile Include="Source\DeclareSoulBeastsEquip.cs" />
+    <Compile Include="Source\DeclareSoulBeastsEquipLevel.cs" />
+    <Compile Include="Source\DeclareState.cs" />
+    <Compile Include="Source\DeclareStateManage.cs" />
+    <Compile Include="Source\DeclareStatePower.cs" />
+    <Compile Include="Source\DeclareStateStifle.cs" />
+    <Compile Include="Source\DeclareStateStifleAdd.cs" />
+    <Compile Include="Source\DeclareStateStifleAddLevel.cs" />
+    <Compile Include="Source\DeclareStateStifleAddLevelAll.cs" />
+    <Compile Include="Source\DeclareStateXisui.cs" />
+    <Compile Include="Source\DeclareStateXisuiAcupoint.cs" />
+    <Compile Include="Source\DeclareStatueModel.cs" />
+    <Compile Include="Source\DeclareSvnVersion.cs" />
+    <Compile Include="Source\DeclareSwordSoulCopy.cs" />
+    <Compile Include="Source\DeclareSZZQAward.cs" />
+    <Compile Include="Source\DeclareSZZQScoreAward.cs" />
+    <Compile Include="Source\DeclareTask.cs" />
+    <Compile Include="Source\DeclareTaskBranch.cs" />
+    <Compile Include="Source\DeclareTaskChapter.cs" />
+    <Compile Include="Source\DeclareTaskConquer.cs" />
+    <Compile Include="Source\DeclareTaskDaily.cs" />
+    <Compile Include="Source\DeclareTaskGender.cs" />
+    <Compile Include="Source\DeclareTaskLittletalk.cs" />
+    <Compile Include="Source\DeclareTaskRecommendTips.cs" />
+    <Compile Include="Source\DeclareTaskSort.cs" />
+    <Compile Include="Source\DeclareTaskTalk.cs" />
+    <Compile Include="Source\DeclareTaskTargetReward.cs" />
+    <Compile Include="Source\DeclareThaiScore.cs" />
+    <Compile Include="Source\DeclareTips.cs" />
+    <Compile Include="Source\DeclareTitle.cs" />
+    <Compile Include="Source\DeclareTodayFunction.cs" />
+    <Compile Include="Source\DeclareTodayFunctionTask.cs" />
+    <Compile Include="Source\DeclareTreasureHunt.cs" />
+    <Compile Include="Source\DeclareTreasurePop.cs" />
+    <Compile Include="Source\DeclareTreasureRecovery.cs" />
+    <Compile Include="Source\DeclareTreasureXianjiaSecret.cs" />
+    <Compile Include="Source\DeclareUIConfig.cs" />
+    <Compile Include="Source\DeclareUniverseBoss.cs" />
+    <Compile Include="Source\DeclareUniverseCommand.cs" />
+    <Compile Include="Source\DeclareUniverseRank.cs" />
+    <Compile Include="Source\DeclareUniverseTask.cs" />
+    <Compile Include="Source\DeclareVip.cs" />
+    <Compile Include="Source\DeclareVipChat.cs" />
+    <Compile Include="Source\DeclareVipHelp.cs" />
+    <Compile Include="Source\DeclareVipPower.cs" />
+    <Compile Include="Source\DeclareVipRebate.cs" />
+    <Compile Include="Source\DeclareVIPTrueRecharge.cs" />
+    <Compile Include="Source\DeclareVIPWeek.cs" />
+    <Compile Include="Source\DeclareVIPWeekReward.cs" />
+    <Compile Include="Source\DeclareWash.cs" />
+    <Compile Include="Source\DeclareWashBest.cs" />
+    <Compile Include="Source\DeclareWeaponScale.cs" />
+    <Compile Include="Source\DeclareWeekWelfare.cs" />
+    <Compile Include="Source\DeclareWeekWelfareReward.cs" />
+    <Compile Include="Source\DeclareWorldBonfire.cs" />
+    <Compile Include="Source\DeclareWorldQuestion.cs" />
+    <Compile Include="Source\DeclareWorldQuestionReward.cs" />
+    <Compile Include="Source\DeclareWorldSupport.cs" />
+    <Compile Include="Source\DeclareXianmengzhengba.cs" />
+    <Compile Include="Source\FunctionStartDefine.cs" />
+    <Compile Include="Source\FunctionVariableDefine.cs" />
+    <Compile Include="Source\GlobalDefine.cs" />
+    <Compile Include="Source\ItemChangeReasonDefine.cs" />
+    <Compile Include="Source\RankBaseDefine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
