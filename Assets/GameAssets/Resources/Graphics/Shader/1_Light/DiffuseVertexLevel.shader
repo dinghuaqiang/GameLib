@@ -66,7 +66,8 @@ Shader "GameLib/Light/DiffuseVertexLevel"
                 // 得到环境光
                 fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
                 // 把法线从模型空间转换到世界空间，主要是后面进行点积的时候需要是同坐标系，
-                fixed3 worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject));
+                //UnityObjectToWorldNormal(v.normal)代替mul(v.normal, (float3x3)unity_WorldToObject)
+                fixed3 worldNormal = normalize(UnityObjectToWorldNormal(v.normal));
                 //根据_WorldSpaceLightPos0归一化来获取世界空间中光源的方向
                 fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
                 //通过计算得到漫反射光
