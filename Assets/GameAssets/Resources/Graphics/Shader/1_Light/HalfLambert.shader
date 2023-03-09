@@ -1,8 +1,9 @@
 ﻿//------------------------------------------------
-//    逐像素光照测试，实现逐像素的漫反射光照
-//    缺点：光照无法到达的区域，背光面，基本上是全黑的，没有任何明暗变化。失去了模型细节
+//    半兰伯特光照模型
+//    C diffuse = (C light（光源的颜色和强度） * M diffuse（漫反射系数）)(0.5（缩放）(n²（表面法线）*I（光源方向）) + 0.5（偏移）)
+//    把[(n²（表面法线）*I（光源方向）]结果范围从[-1,1]限制在[0,0],模型的背光面也可以有明暗变化
 //------------------------------------------------
-Shader "GameLib/Light/DiffuseFragLevel"
+Shader "GameLib/Light/HalfLanbert"
 {
     Properties
     {
@@ -56,8 +57,10 @@ Shader "GameLib/Light/DiffuseFragLevel"
                 fixed3 worldNormal = normalize(vertData.worldNormal);
                 //根据_WorldSpaceLightPos0归一化来获取世界空间中光源的方向
                 fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
+                //使用半兰伯特公式计算光照
+                fixed halfLambert = dot(worldNormal, worldLightDir) * 0.5 + 0.5;
                 //计算漫反射的光
-                fixed3 diffuse = _LightColor0.rgb * _DiffuseColor.rgb * saturate(dot(worldNormal, worldLightDir));
+                fixed3 diffuse = _LightColor0.rgb * _DiffuseColor.rgb * halfLambert;
                 //把环境光和漫反射光相加得到光照
                 fixed3 color = ambient + diffuse;
                 return fixed4(color, 1.0);
