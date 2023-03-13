@@ -1,10 +1,9 @@
 ﻿//------------------------------------------------
 //    高光反射光照实验
-//    逐顶点方式
-//    缺点：高光部分不平滑。主要是高光反射部分的计算是非线性的，而在顶点着色器中计算光照再进行插值是线性的，
-//破坏了原计算的非线性关系，就会出现较大的视觉问题。
+//    逐像素方式
+//    相比逐顶点计算的方式，逐像素计算的光照会更加平滑
 //------------------------------------------------
-Shader "GameLib/Light/SpecularGlossVertex"
+Shader "GameLib/Light/SpecularGlossFrag"
 {
     Properties
     {
@@ -47,18 +46,27 @@ Shader "GameLib/Light/SpecularGlossVertex"
             struct v2f
             {
                 float4 position : SV_POSITION;
-                float3 color : COLOR;
+                float3 worldNormal : TEXCOORD0;
+                float3 worldPos : TEXCOORD1;
             };
 
+            //计算世界空间下的法线方向和顶点坐标，然后扔给片元着色器
             v2f vert(a2v renderData)
             {
                 v2f o;
                 //将顶点从模型空间转换到观察空间 UnityObjectToClipPos代替mul(UNITY_MATRIX_MVP, renderData.vertex)
                 o.position = UnityObjectToClipPos(renderData.vertex);
+                //拿到世界空间的法线
+                o.worldNormal = normalize(mul(renderData.normal, (float3x3)_World2Object));
+                //把顶点从模型空间转到世界空间
+                o.worldPos = mul(_Object2World, renderData.vertex).xyz;
+                return o;
+            }
+
+            fixed4 frag(v2f vertData) : SV_TARGET
+            {
                 //拿到环境光
                 fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
-                //拿到世界空间的法线
-                fixed3 worldNormal = normalize(mul(renderData.normal, (float3x3)_World2Object));
                 //根据_WorldSpaceLightPos0归一化来获取世界空间中光源的方向
                 fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
                 //计算漫反射光
@@ -68,17 +76,12 @@ Shader "GameLib/Light/SpecularGlossVertex"
                 fixed3 reflectDir = normalize(reflect(-worldLightDir, worldNormal));
                 //获取世界空间的视口方向 _WorldSpaceCameraPos得到摄像机位置，
                 //把顶点位置从模型空间变换到世界空间下，再通过和相机位置相减就可得到世界空间下的视角方向
-                fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul(_Object2World, renderData.vertex).xyz);
+                fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul(_Object2World, vertData.vertex).xyz);
                 //计算高光,把参数代入高光反射公式
                 fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(reflectDir, viewDir)), _GlossArea);
                 //求和，计算最终输出颜色
-                0.color = ambient + diffuse + specular;
-                return o;
-            }
-
-            fixed4 frag(v2f vertData) : SV_TARGET
-            {
-                return fixed4(vertData.color, 1.0);
+                fixed3 color = ambient + diffuse + specular;
+                return fixed4(color, 1.0);
             }
 
             ENDCG
