@@ -1,4 +1,7 @@
-﻿//------------------------------------------------
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
+//------------------------------------------------
 //    高光反射光照实验
 //    逐顶点方式
 //    缺点：高光部分不平滑。主要是高光反射部分的计算是非线性的，而在顶点着色器中计算光照再进行插值是线性的，
@@ -58,7 +61,7 @@ Shader "GameLib/Light/SpecularGlossVertex"
                 //拿到环境光
                 fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
                 //拿到世界空间的法线
-                fixed3 worldNormal = normalize(mul(renderData.normal, (float3x3)_World2Object));
+                fixed3 worldNormal = normalize(mul(renderData.normal, (float3x3)unity_WorldToObject));
                 //根据_WorldSpaceLightPos0归一化来获取世界空间中光源的方向
                 fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
                 //计算漫反射光
@@ -68,11 +71,11 @@ Shader "GameLib/Light/SpecularGlossVertex"
                 fixed3 reflectDir = normalize(reflect(-worldLightDir, worldNormal));
                 //获取世界空间的视口方向 _WorldSpaceCameraPos得到摄像机位置，
                 //把顶点位置从模型空间变换到世界空间下，再通过和相机位置相减就可得到世界空间下的视角方向
-                fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul(_Object2World, renderData.vertex).xyz);
+                fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul(unity_ObjectToWorld, renderData.vertex).xyz);
                 //计算高光,把参数代入高光反射公式
                 fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(reflectDir, viewDir)), _GlossArea);
                 //求和，计算最终输出颜色
-                0.color = ambient + diffuse + specular;
+                o.color = ambient + diffuse + specular;
                 return o;
             }
 
