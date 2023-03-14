@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BlinnPhongUseBuildInFunctionMat
-  m_Shader: {fileID: 4800000, guid: f0036453870fc4897b29680d6ae3e971, type: 3}
+  m_Shader: {fileID: 4800000, guid: c959783996bef344bb1cb1fee19fca0d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -61,6 +61,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Gloss: 20
+    - _GlossArea: 20
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Mode: 0
