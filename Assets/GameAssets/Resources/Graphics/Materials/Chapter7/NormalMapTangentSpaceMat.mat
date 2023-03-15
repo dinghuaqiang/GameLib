@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NormalMapTangentSpaceMat
-  m_Shader: {fileID: 4800000, guid: 8599ea31011944d2b92327308c24b4d4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 25ea2f23ea101a2428ba7114ebedc4d7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d938a66d993e948deaed0109b1217675, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0361ae74b0ea1be4cbd3109f9bb8ccd9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,6 +66,10 @@ Material:
     - _NormalMap:
         m_Texture: {fileID: 2800000, guid: 7146ffad75d1046d4ac8f9cc80c0afea, type: 3}
         m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 3474b53e20c12b941b8e3b1ffa2f142f, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -81,9 +85,11 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Gloss: 50
+    - _GlossArea: 20
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Mode: 0
+    - _NormalScale: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _ParallaxScale: 0.005

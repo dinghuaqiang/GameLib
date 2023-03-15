@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NormalMapTangentSpaceMat
-  m_Shader: {fileID: 4800000, guid: 8599ea31011944d2b92327308c24b4d4, type: 3}
+  m_Shader: {fileID: 4800000, guid: bd2543717d5feae43971bde66307d847, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -81,6 +81,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Gloss: 50
+    - _GlossArea: 20
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Mode: 0
