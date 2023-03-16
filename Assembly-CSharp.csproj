@@ -541,6 +541,7 @@
     <Compile Include="Assets\Test\StudyTest\DotCrossTest.cs" />
     <Compile Include="Assets\Test\ThirdCamera\PlayerMove.cs" />
     <Compile Include="Assets\Test\TimeTest\TimeTest.cs" />
+    <Compile Include="Assets\Test\VectorTest\VectorTest.cs" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\NGUI\ReadMe - 3.12.0.txt" />
@@ -551,6 +552,7 @@
     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\SingleTexture.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\DiffuseVertexLevel.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
@@ -559,6 +561,7 @@
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\NormalMapInTangent.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\HalfLambert.shader" />
