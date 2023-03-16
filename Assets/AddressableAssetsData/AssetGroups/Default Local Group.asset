@@ -16,21 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b5d6bfc68a8838043a71e7c9b8b662a2
-  m_SerializeEntries:
-  - m_GUID: b0d70ac4effe5d142b560fd4a6c62061
-    m_Address: Assets/GameAssets/Resources
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
-  - m_GUID: 45c5bc64d218c8e45b3f0af335cd6d99
-    m_Address: Assets/Scenes
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 412b92d4feeb9c548bfa98f62c4d1022
-    m_Address: Assets/GameAssets/Resources/Prefabs/UnityChanModel/Prefabs/unitychan.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3257143821984004ba5fb39b09677672, type: 2}
   m_SchemaSet:
