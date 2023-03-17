@@ -2,7 +2,7 @@
 // Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 
 //------------------------------------------------
-//    渐变纹理贴图测试
+//    渐变纹理控制漫反射光照
 //------------------------------------------------
 Shader "GameLib/Tex/RampMapTex"
 {

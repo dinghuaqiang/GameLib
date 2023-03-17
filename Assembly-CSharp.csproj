@@ -576,6 +576,7 @@
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\NormalMapInWorldSpace.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\MaskTex.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
