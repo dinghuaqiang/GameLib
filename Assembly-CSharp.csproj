@@ -562,6 +562,7 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\NormalMapInTangent.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\RampMapTex.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\HalfLambert.shader" />
@@ -572,6 +573,7 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\DiffuseFragLevel.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\NormalMapInWorldSpace.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
