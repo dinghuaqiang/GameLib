@@ -584,10 +584,13 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\3_AlphaEffect\AlphaTest.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\3_AlphaEffect\AlphaBlend.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\4_HighLevelLight\ForwardRendering.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\BlinnPhong.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\3_AlphaEffect\CullDoublePass.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\Stage\Shader\AlphaMask.shader" />
