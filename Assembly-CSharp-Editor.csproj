@@ -64,6 +64,7 @@
     <Compile Include="Assets\Editor\Extrenl\PathologicalGames\Common\PGEditorUtils.cs" />
     <Compile Include="Assets\Editor\Extrenl\PathologicalGames\PoolManager\PreRuntimePoolItemInspector.cs" />
     <Compile Include="Assets\Editor\Extrenl\PathologicalGames\PoolManager\SpawnPoolInspector.cs" />
+    <Compile Include="Assets\Editor\ShaderTool\RenderCubemapWizard.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Editor\CreateLocatorHere.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
