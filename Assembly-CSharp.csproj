@@ -565,6 +565,7 @@
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\RampMapTex.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\4_HighLevelLight\Shadow.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\HalfLambert.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
@@ -612,6 +613,7 @@
     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\SpecularGlossFrag.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\4_HighLevelLight\ShadowAlphaTest.shader" />
     <Reference Include="Cinemachine">
       <HintPath>E:/GameKit/GameLib/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
