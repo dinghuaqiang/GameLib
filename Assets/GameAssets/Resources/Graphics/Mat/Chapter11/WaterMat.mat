@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WaterMat
-  m_Shader: {fileID: 4800000, guid: b3116ed05ca7c45d19dd7002613c8d79, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9b4e25f243bf6f8478a4a77917512c39, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -35,12 +35,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1fdd0982b3b8c4a2cb28e67913204b5b, type: 3}
+        m_Texture: {fileID: 2800000, guid: bd8d3e8a377289a46b7c64953e46f6a3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -60,24 +64,27 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Frequency: 5
+    - _Frequency: 0.8
     - _Glossiness: 0.5
-    - _InvWaveLength: 4
+    - _InvWaveLength: 0.4
     - _InvWavelength: 20
-    - _Magnitude: 0.06
+    - _Magnitude: 1
     - _Metallic: 0
     - _Mode: 0
+    - _Multiplier: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Scroll2X: 1
+    - _ScrollX: 1
     - _ShadowRamp: 1
-    - _Speed: 0.4
+    - _Speed: 0.3
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseLightMap: 1
     - _ZWrite: 1
     m_Colors:
     - _AmbientColour1: {r: 0.5, g: 0.5, b: 0.5, a: 0}
-    - _Color: {r: 0.285359, g: 0.6691177, b: 0.6214787, a: 1}
+    - _Color: {r: 0.33806515, g: 0.6698113, b: 0.6258042, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightColour0: {r: 1, g: 1, b: 1, a: 0}
     - _LightColour1: {r: 1, g: 1, b: 1, a: 0}

@@ -564,6 +564,7 @@
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\6_Anim\Water.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\NormalMapInTangent.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\RampMapTex.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
@@ -611,6 +612,7 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\6_Anim\ScrollBg.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
@@ -619,6 +621,7 @@
     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\SpecularGlossFrag.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\4_HighLevelLight\ShadowAlphaTest.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\6_Anim\SequenceAnim.shader" />
     <Reference Include="Cinemachine">
       <HintPath>E:/GameKit/GameLib/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ImageSequenceAnimationMat
-  m_Shader: {fileID: 4800000, guid: 58893d9d91d9c4d27b866bc7de26e8d8, type: 3}
+  m_Shader: {fileID: 4800000, guid: 65db1dffb3d1cc14283c6f9d904108c0, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: da72fd1baa3aa4b7c99f7c3c8ead83d0, type: 3}
+        m_Texture: {fileID: 2800000, guid: d43a99f954eb212449f8ad2a599577e8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -78,7 +78,7 @@ Material:
     - _ScrollY: 0
     - _SizeX: 8
     - _SizeY: 8
-    - _Speed: 40
+    - _Speed: 100
     - _SrcBlend: 1
     - _UVSec: 0
     - _VerticalAmount: 8
