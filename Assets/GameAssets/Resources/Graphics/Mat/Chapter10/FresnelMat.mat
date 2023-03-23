@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FresnelMat
-  m_Shader: {fileID: 4800000, guid: 7869229ae22e04c5282a812963c8d045, type: 3}
+  m_Shader: {fileID: 4800000, guid: d9f7cda12875adb4ea4a4f03e987d1ed, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cubemap:
-        m_Texture: {fileID: 8900000, guid: 5e6d2cc25beb34a998784c5dc7e8fe9c, type: 2}
+        m_Texture: {fileID: 8900000, guid: 8adfc643dae86be43b9f264256aa241f, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:

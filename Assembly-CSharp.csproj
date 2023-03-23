@@ -555,10 +555,12 @@
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\ReflectionShader.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\SingleTexture.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\DiffuseVertexLevel.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\FresnelShader.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\RefractionShader.shader" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
