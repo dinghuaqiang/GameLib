@@ -572,6 +572,7 @@
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\HalfLambert.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\Mirror.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
@@ -601,6 +602,7 @@
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\SpecularGlossVertex.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\GlassRefraction.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
