@@ -159,6 +159,9 @@
     <Compile Include="Assets\Code\Core\Net\SocketClient\Socket\FSocketClient.cs" />
     <Compile Include="Assets\Code\Core\Net\SocketClient\Socket\FSocketReceiver.cs" />
     <Compile Include="Assets\Code\Core\Net\SocketClient\Socket\FSocketSender.cs" />
+    <Compile Include="Assets\Code\Core\PostEffects\EdgeDetection.cs" />
+    <Compile Include="Assets\Code\Core\PostEffects\PostEffectsBase.cs" />
+    <Compile Include="Assets\Code\Core\PostEffects\SaturationAndContrast.cs" />
     <Compile Include="Assets\Code\Core\Scene\GameSceneManager.cs" />
     <Compile Include="Assets\Code\Core\Scene\ISceneManager.cs" />
     <Compile Include="Assets\Code\Core\Scene\SceneInfo.cs" />
@@ -589,6 +592,7 @@
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\GameAssets\RawAssets\Map002\StandardNoCulling.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\7_PostEffects\SaturationAndContrast.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\3_AlphaEffect\AlphaTest.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\3_AlphaEffect\AlphaBlend.shader" />
@@ -622,6 +626,7 @@
     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\SpecularGlossFrag.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\4_HighLevelLight\ShadowAlphaTest.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\7_PostEffects\EdgeDetection.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\6_Anim\SequenceAnim.shader" />
     <Reference Include="Cinemachine">
       <HintPath>E:/GameKit/GameLib/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
