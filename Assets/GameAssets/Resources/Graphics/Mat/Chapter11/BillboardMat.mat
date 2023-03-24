@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BillboardMat
-  m_Shader: {fileID: 4800000, guid: c7ccd0cbfa3554cb19be3c2e14c7351e, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2c5b293049922104c9c510d63a0a74a6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d663cbf1769164424a7149b62663a465, type: 3}
+        m_Texture: {fileID: 2800000, guid: 76d00f05118ecc740b419b8df106274b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -62,6 +62,7 @@ Material:
     - _DstBlend: 0
     - _Frequency: 1
     - _Glossiness: 0.5
+    - _InvWaveLength: 10
     - _InvWavelength: 10
     - _Magnitude: 0.02
     - _Metallic: 0
