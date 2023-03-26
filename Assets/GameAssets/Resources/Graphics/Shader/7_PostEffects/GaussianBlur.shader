@@ -9,7 +9,6 @@ Shader "GameLib/PostEffects/GaussianBlur"
 		_BlurSize ("Blur Size", Float) = 1.0
 	}
 	SubShader {
-
 		/**
 			unity会把 CGINCLUDE 和 ENDCG 之间的代码插入到每一个pass中，已达到声明一遍，多次使用的目的。
 			（参考）例如，可以在 CGINCLUDE 和 ENDCG 之间 定义多个 顶点和片段方法，在pass里只要写明 #pragma vertex 顶点方法名 #pragma fragment 片段方法名 即可，而不用写具体的函数实现
@@ -21,11 +20,13 @@ Shader "GameLib/PostEffects/GaussianBlur"
 		#include "UnityCG.cginc"
 		
 		sampler2D _MainTex;  
+		//得到相邻像素的纹理坐标偏移量
 		half4 _MainTex_TexelSize;
 		float _BlurSize;
 		  
 		struct v2f {
 			float4 pos : SV_POSITION;
+			//定义一个5维的纹理坐标数组
 			half2 uv[5]: TEXCOORD0;
 		};
 		  
@@ -34,8 +35,9 @@ Shader "GameLib/PostEffects/GaussianBlur"
 			o.pos = UnityObjectToClipPos(v.vertex);
 			
 			half2 uv = v.texcoord;
-			
+			//存储当前的采样纹理
 			o.uv[0] = uv;
+			//存储高斯模糊中对邻域采样时使用的纹理坐标  和_BlurSize相乘来控制采样距离
 			o.uv[1] = uv + float2(0.0, _MainTex_TexelSize.y * 1.0) * _BlurSize;
 			o.uv[2] = uv - float2(0.0, _MainTex_TexelSize.y * 1.0) * _BlurSize;
 			o.uv[3] = uv + float2(0.0, _MainTex_TexelSize.y * 2.0) * _BlurSize;
@@ -77,6 +79,7 @@ Shader "GameLib/PostEffects/GaussianBlur"
 		ZTest Always Cull Off ZWrite Off
 		
 		Pass {
+			//NAME定义Pass的名字，可以在其他Shader中使用
 			NAME "GAUSSIAN_BLUR_VERTICAL"
 			
 			CGPROGRAM
