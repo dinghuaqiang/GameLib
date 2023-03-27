@@ -55,6 +55,7 @@ Shader "GameLib/PostEffects/MotionBlur"
 		
 		Pass {
 			Blend SrcAlpha OneMinusSrcAlpha
+			//输出颜色中只有RGB通道会被写入
 			ColorMask RGB
 
 			CGPROGRAM
@@ -67,6 +68,7 @@ Shader "GameLib/PostEffects/MotionBlur"
 		
 		Pass {
 			Blend One Zero
+			//输出颜色中只有A通道会被写入
 			ColorMask A
 
 			CGPROGRAM  
