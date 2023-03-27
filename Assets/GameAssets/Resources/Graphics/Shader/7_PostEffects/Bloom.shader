@@ -1,6 +1,6 @@
 ﻿/**
     后处理效果
-	高斯模糊
+	Bloom效果，边缘提亮
 */
 Shader "GameLib/PostEffects/Bloom"
 {

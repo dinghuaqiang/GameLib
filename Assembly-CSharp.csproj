@@ -162,6 +162,7 @@
     <Compile Include="Assets\Code\Core\PostEffects\Bloom.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\EdgeDetection.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\GaussianBlur.cs" />
+    <Compile Include="Assets\Code\Core\PostEffects\MotionBlur.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\PostEffectsBase.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\SaturationAndContrast.cs" />
     <Compile Include="Assets\Code\Core\Scene\GameSceneManager.cs" />
@@ -618,6 +619,7 @@
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\7_PostEffects\MotionBlur.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
