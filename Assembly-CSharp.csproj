@@ -161,6 +161,7 @@
     <Compile Include="Assets\Code\Core\Net\SocketClient\Socket\FSocketSender.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\Bloom.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\EdgeDetection.cs" />
+    <Compile Include="Assets\Code\Core\PostEffects\FogWithDepthTexture.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\GaussianBlur.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\MotionBlur.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\MotionBlurWithDepthTexture.cs" />
