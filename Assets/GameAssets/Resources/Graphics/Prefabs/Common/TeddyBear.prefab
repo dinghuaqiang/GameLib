@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105768}
-  m_LocalRotation: {x: 0, y: 0, z: -6.661338e-16, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: -6.661338e-16, w: 1}
   m_LocalPosition: {x: -0.18933514, y: 3.315906e-17, z: 9.467183e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -114,7 +114,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112758}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.1418598, y: -0.07862165, z: -0.013822556}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -239,8 +239,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135208}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 433504}
@@ -263,7 +263,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 40f3cca4887e12a40a281defa788abaf, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -287,7 +287,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: f2c827ad027fe4f9991a5c64dc590d17, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 40f3cca4887e12a40a281defa788abaf, type: 3}
   m_Bones:
   - {fileID: 499604}
   - {fileID: 406756}
@@ -312,8 +312,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 402270}
   m_AABB:
-    m_Center: {x: -0.08179715, y: -0.03324938, z: -0.0007824302}
-    m_Extent: {x: 0.63607025, y: 0.30662227, z: 0.5432567}
+    m_Center: {x: -0.08179718, y: -0.03324938, z: -0.00078240037}
+    m_Extent: {x: 0.6360703, y: 0.3066223, z: 0.54325664}
   m_DirtyAABB: 0
 --- !u!1 &140736
 GameObject:
@@ -338,7 +338,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140736}
-  m_LocalRotation: {x: 0, y: 0, z: -1.0269563e-15, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: -1.0269563e-15, w: 1}
   m_LocalPosition: {x: -0.043673642, y: 0.03892453, z: 1.0937151e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -432,7 +432,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152706}
-  m_LocalRotation: {x: -0.024392748, y: 0.036161378, z: -0.5586859, w: 0.8282316}
+  m_LocalRotation: {x: -0.024392745, y: 0.036161374, z: -0.55868584, w: 0.82823145}
   m_LocalPosition: {x: 0.16275832, y: -0.0024606925, z: -0.00036370748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -588,7 +588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174318}
   m_LocalRotation: {x: 0.48044342, y: -0.5188199, z: -0.48044342, w: 0.5188199}
-  m_LocalPosition: {x: 0, y: 0.46096462, z: -0.0024980842}
+  m_LocalPosition: {x: -0, y: 0.46096462, z: -0.0024980842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494446}
@@ -635,6 +635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433504}
+  - component: {fileID: 5593364977011599370}
   m_Layer: 0
   m_Name: TeddyBear
   m_TagString: Untagged
@@ -649,8 +650,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176808}
-  m_LocalRotation: {x: 0, y: 0.9848078, z: 0, w: 0.17364798}
-  m_LocalPosition: {x: 0, y: 0.4, z: -8.6}
+  m_LocalRotation: {x: 0, y: 0.9848078, z: 0, w: 0.17364824}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402270}
@@ -658,6 +659,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &5593364977011599370
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 40f3cca4887e12a40a281defa788abaf, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &185336
 GameObject:
   m_ObjectHideFlags: 0
