@@ -880,11 +880,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1386361089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 603b47c5d6a3c344fb73fb9d93c90e8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cc90afb31150d948915575e7d233793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MotionBlurShader: {fileID: 4800000, guid: e8c860b524c9a364d96ee21668683efd, type: 3}
-  BlurSize: 0.5
+  FogShader: {fileID: 4800000, guid: acedc9919d2828449b542acef14e60de, type: 3}
+  FogDensity: 1
+  FogColor: {r: 1, g: 1, b: 1, a: 1}
+  FogStart: 0
+  FogEnd: 2
 --- !u!1 &1461455004
 GameObject:
   m_ObjectHideFlags: 0
