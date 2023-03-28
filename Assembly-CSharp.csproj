@@ -569,6 +569,7 @@
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\7_PostEffects\MotionBlurWithDepthTexture.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\9_Noise\Dissolve.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\Mirror.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
