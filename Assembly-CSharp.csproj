@@ -596,6 +596,7 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\BlinnPhong.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\9_Noise\WaterWave.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\3_AlphaEffect\CullDoublePass.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />

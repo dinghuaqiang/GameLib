@@ -70,7 +70,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Burn: 0.31
-    - _BurnAmount: 0
+    - _BurnAmount: 0.458
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
