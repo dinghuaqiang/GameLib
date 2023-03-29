@@ -84,10 +84,11 @@ Shader "GameLib/Tex/NormalMapInTangent"
 
 				//https://zhuanlan.zhihu.com/p/20933988
 				//https://www.zhihu.com/question/23706933/answer/25591714
+				//https://learnopengl-cn.github.io/05%20Advanced%20Lighting/04%20Normal%20Mapping/#_1 opengl的关于切线空间的解释
 				//求副切线：法线和切线的叉乘得到了副切线方向有两个，用*w分量来选择正面
 				//float3 binormal = cross(normalize(v.normal), normalize(v.tangent.xyz)) * v.tangent.w;
 				//求切线空间矩阵:
-				//这里的切线、副切线、法线相当于xyz 这三个分量的组合就是这个空间的空间矩阵
+				//这里的切线、副切线、法线相当于xyz 这三个分量的组合就是这个空间的空间矩阵，这里的rotation其实就是TBN矩阵，TBN矩阵这三个字母分别代表tangent、bitangent和normal向量
 				//float3x3 rotation = float3x3(v.tangent.xyz, binormal, v.normal);
 				//这个内置宏可以代替上面两行
 				TANGENT_SPACE_ROTATION;
