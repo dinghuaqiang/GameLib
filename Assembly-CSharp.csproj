@@ -163,6 +163,7 @@
     <Compile Include="Assets\Code\Core\PostEffects\EdgeDetection.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\EdgeDetectNormalsAndDepth.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\FogWithDepthTexture.cs" />
+    <Compile Include="Assets\Code\Core\PostEffects\FogWithNoise.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\GaussianBlur.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\MotionBlur.cs" />
     <Compile Include="Assets\Code\Core\PostEffects\MotionBlurWithDepthTexture.cs" />
@@ -582,6 +583,7 @@
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\7_PostEffects\EdgeDetectNormalsAndDepth.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\MaskTex.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\9_Noise\FogWithNoise.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\GameAssets\RawAssets\Map002\StandardNoCulling.shader" />
