@@ -561,6 +561,7 @@
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\6_Anim\Water.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\NormalMapInTangent.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\11_SurfaceShader\SurfaceDiffuse.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\7_PostEffects\Bloom.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\2_Tex\RampMapTex.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />

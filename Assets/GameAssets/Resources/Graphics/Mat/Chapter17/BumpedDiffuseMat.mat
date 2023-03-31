@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BumpedDiffuseMat
-  m_Shader: {fileID: 4800000, guid: 7a4b77005ae974822969406b7e2d39b3, type: 3}
+  m_Shader: {fileID: 4800000, guid: daf375a3e7ed86046a2d5180856e1c40, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 7ca2e80c7769e4720878ceb04320d2fa, type: 3}
+        m_Texture: {fileID: 2800000, guid: a3cb310674a3968479b0455898cf596b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5caf579f0b4394164b7492ccb85ad67e, type: 3}
+        m_Texture: {fileID: 2800000, guid: b4f0cbea54433194ba98916ee9d09cf9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -61,7 +61,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Glossiness: 0.33
-    - _Metallic: 0
+    - _Metallic: 0.12
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
