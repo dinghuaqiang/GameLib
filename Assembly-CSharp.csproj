@@ -605,6 +605,7 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\Stage\Shader\AlphaMask.shader" />
     <None Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+    <None Include="Assets\GameAssets\Resources\Graphics\Shader\11_SurfaceShader\ReflectionProbes.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\1_Light\SpecularGlossVertex.shader" />
     <None Include="Assets\GameAssets\Resources\Graphics\Shader\5_AdvancedTex\GlassRefraction.shader" />
