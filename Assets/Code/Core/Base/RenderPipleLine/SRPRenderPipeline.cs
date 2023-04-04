@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 
-namespace Code.Core.Base
+namespace GameLib.Core.Base
 {
     [CreateAssetMenu(menuName = "SRP/SRPRenderPipelineAssets")]
     public class SRPRenderPipeline : RenderPipelineAsset

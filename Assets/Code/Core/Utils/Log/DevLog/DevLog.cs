@@ -36,6 +36,12 @@ namespace GameLib.Core.Utils
             Debug.Log(msg);
         }
 
+        public static void LogWarning(string msg)
+        {
+            if (!IS_SHOW_LOG) { return; }
+            Debug.LogWarning(msg);
+        }
+
         public static void LogGreen(string msg)
         {
             if (!IS_SHOW_LOG) { return; }

@@ -100,6 +100,12 @@
     <Compile Include="Assets\Code\Core\Base\ObjectPool\GameObjectPool.cs" />
     <Compile Include="Assets\Code\Core\Base\ObjectPool\UniversalObjectPool.cs" />
     <Compile Include="Assets\Code\Core\Base\RenderPipleLine\SRPRenderPipeline.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderEx.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderFactory.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderInfo.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderManager.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderPropertyInfo.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderPropertyType.cs" />
     <Compile Include="Assets\Code\Core\Base\System\GAction.cs" />
     <Compile Include="Assets\Code\Core\Base\System\GFunc.cs" />
     <Compile Include="Assets\Code\Core\Base\System\NoRepeatDictionary.cs" />
@@ -149,6 +155,8 @@
     <Compile Include="Assets\Code\Core\FSM\BaseState.cs" />
     <Compile Include="Assets\Code\Core\FSM\FiniteStateMachine.cs" />
     <Compile Include="Assets\Code\Core\FSM\IState.cs" />
+    <Compile Include="Assets\Code\Core\MagicCube\SimpleStruct\IntegerVectorPair.cs" />
+    <Compile Include="Assets\Code\Core\MagicCube\SimpleStruct\StringIntegerPair.cs" />
     <Compile Include="Assets\Code\Core\Net\Base\ByteArray.cs" />
     <Compile Include="Assets\Code\Core\Net\Base\MessageData.cs" />
     <Compile Include="Assets\Code\Core\Net\Base\MessageQueue.cs" />
