@@ -3,26 +3,26 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine;
-using GameLib.Core.Utils;
+using Code.Core.Utils;
 
 namespace GameLib.Core.Asset
 {
-    public class AssetLoadManager
+    public class AssetLoadManager : Singleton<AssetLoadManager>
     {
-        private static AssetLoadManager _instance = null;
-        public static AssetLoadManager SharedInstance
+        #region 单例的初始化操作
+        public override void OnInitialize()
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new AssetLoadManager();
-                    //进行初始化，方便进行同步加载
-                    Addressables.InitializeAsync();
-                }
-                return _instance;
-            }
+            base.OnInitialize();
+            //进行初始化，方便进行同步加载
+            Addressables.InitializeAsync();
         }
+
+        public override void OnUnInitialize()
+        {
+            base.OnUnInitialize();
+        }
+        #endregion
+
         private Action<UnityEngine.Object> _onLoadComplated = null;
         private Action<UnityEngine.SceneManagement.Scene> _onSceneLoadComplated = null;
         private AsyncOperationHandle<SceneInstance> _sceneLoadHandle;

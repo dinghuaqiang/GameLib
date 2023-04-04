@@ -24,10 +24,10 @@ namespace Assets.Test
             _objectRoot = transform.Find("[Objects]");
             for (int i = 0; i < 10; i++)
             {
-                AssetLoadManager.SharedInstance.LoadAssetAsync(_modelPath, OnLoadComplated);
+                AssetLoadManager.Instance.LoadAssetAsync(_modelPath, OnLoadComplated);
             }
             //AssetLoadManager.SharedInstance.LoadAssetAsync(_modelPath, OnLoadComplated);
-            AssetLoadManager.SharedInstance.LoadAssetAsync(_lightPath, OnLoadComplated);
+            AssetLoadManager.Instance.LoadAssetAsync(_lightPath, OnLoadComplated);
         }
 
         private void OnLoadComplated(Object obj)
@@ -51,7 +51,7 @@ namespace Assets.Test
             if (Time.realtimeSinceStartup >= 40 && !_loaded)
             {
                 _loaded = true;
-                AssetLoadManager.SharedInstance.LoadAssetAsync(_modelPath, OnLoadComplated);
+                AssetLoadManager.Instance.LoadAssetAsync(_modelPath, OnLoadComplated);
             }
         }
 

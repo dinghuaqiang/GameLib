@@ -11,7 +11,7 @@ public class LoadUITest : MonoBehaviour
     private GameObject _thisGo = null;
     void Start()
     {
-        AssetLoadManager.SharedInstance.LoadAssetAsync(Root, OnLoadRootFinish);
+        AssetLoadManager.Instance.LoadAssetAsync(Root, OnLoadRootFinish);
     }
 
     private void OnLoadRootFinish(Object go)
@@ -19,7 +19,7 @@ public class LoadUITest : MonoBehaviour
         if (go != null)
         {
             _rootTrans = Instantiate<GameObject>(go as GameObject).transform;
-            AssetLoadManager.SharedInstance.LoadAssetAsync(PrefabPath, OnLoadFinish);
+            AssetLoadManager.Instance.LoadAssetAsync(PrefabPath, OnLoadFinish);
         }
     }
 

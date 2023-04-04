@@ -68,6 +68,7 @@
     <Compile Include="Assets\Code\Core\AssetsManager\Cleaner\AutoCleanerManager.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Cleaner\IAutoCleanInfo.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Cleaner\ObjectUsedInfo.cs" />
+    <Compile Include="Assets\Code\Core\AssetsManager\Loader\ShaderAssetsLoader.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Manager\AsyncActionQueue\Defines\AsyncActionType.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Manager\Bean\FileEntity.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Manager\Defines\AssetsRequestTypeCode.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Code\Core\Base\RenderPipleLine\SRPRenderPipeline.cs" />
     <Compile Include="Assets\Code\Core\Base\Shader\ShaderEx.cs" />
     <Compile Include="Assets\Code\Core\Base\Shader\ShaderFactory.cs" />
+    <Compile Include="Assets\Code\Core\Base\Shader\ShaderFactoryProxy.cs" />
     <Compile Include="Assets\Code\Core\Base\Shader\ShaderInfo.cs" />
     <Compile Include="Assets\Code\Core\Base\Shader\ShaderManager.cs" />
     <Compile Include="Assets\Code\Core\Base\Shader\ShaderPropertyInfo.cs" />
