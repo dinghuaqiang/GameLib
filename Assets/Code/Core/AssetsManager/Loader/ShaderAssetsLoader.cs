@@ -9,7 +9,7 @@ namespace GameLib.Core.Asset
     public class ShaderAssetsLoader
     {
         //Shader的变体集合的Bundle路径
-        private const string CN_SHADER_BUNDLE_PATH = "Shader/shaderfactory";
+        private const string CN_SHADER_BUNDLE_PATH = "Assets/GameAssets/Resources/Prefabs/Shader/ShaderFactory.prefab";
         private static GameObject _shaderFactoryAssets = null;
         private static GameObject _shaderFactoryGo = null;
         //材质没有找到
