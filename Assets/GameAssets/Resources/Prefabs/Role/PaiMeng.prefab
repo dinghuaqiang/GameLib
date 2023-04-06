@@ -1210,6 +1210,8 @@ GameObject:
   - component: {fileID: 10686167403570882}
   - component: {fileID: 10686167411280236}
   - component: {fileID: 6232149370814292049}
+  - component: {fileID: 2031142729}
+  - component: {fileID: 2031142727}
   m_Layer: 0
   m_Name: PaiMeng
   m_TagString: Untagged
@@ -1226,7 +1228,7 @@ Transform:
   m_GameObject: {fileID: 10686167403870946}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 10686167403570822}
   - {fileID: 10686167403570816}
@@ -1269,7 +1271,43 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.4, z: 0}
+  m_Center: {x: 0, y: 0.53, z: 0}
+--- !u!114 &2031142729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10686167403870946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325a34490847fd74496c0c31c7979136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurCamera: {fileID: 0}
+  Target: {fileID: 10686167403570882}
+  CurPitch: 30
+  CurYaw: 135
+  CurDis: 20
+  CurOffsetY: 2.5
+  CurOffsetX: 0
+  CurFov: 35
+  IsSyncView: 0
+--- !u!114 &2031142727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10686167403870946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b8f8befbabd1c47b307e488df7e418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterController: {fileID: 6232149370814292049}
+  MoveSpeed: 0.2
+  RotationSpeed: 8
 --- !u!1 &10686167403870948
 GameObject:
   m_ObjectHideFlags: 0

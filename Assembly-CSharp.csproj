@@ -361,7 +361,6 @@
     <Compile Include="Assets\Code\Logic\Timer\TimerSystem.cs" />
     <Compile Include="Assets\GameAssets\Resources\GameUI\UIMainForm\Scripts\UIMainForm.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\AutoBlink.cs" />
-    <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\CameraController.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\IdleChanger.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\IKCtrlRightHand.cs" />
@@ -370,6 +369,7 @@
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\SpringCollider.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\SpringManager.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\UnityChanCameraController.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\SplashScreen\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
@@ -527,6 +527,7 @@
     <Compile Include="Assets\Test\PlayableTest\PlayableQueueScripts.cs" />
     <Compile Include="Assets\Test\PlayableTest\PlayableTest.cs" />
     <Compile Include="Assets\Test\PlayableTest\PlayAnimClipQueue.cs" />
+    <Compile Include="Assets\Test\PlayerMove\TestPlayerMove.cs" />
     <Compile Include="Assets\Test\PoolManager\PoolManagerExampleFiles\Scripts\CreationExample.cs" />
     <Compile Include="Assets\Test\PoolManager\PoolManagerExampleFiles\Scripts\DeleteAndCreateInSameFrame.cs" />
     <Compile Include="Assets\Test\PoolManager\PoolManagerExampleFiles\Scripts\InstanceHandlerDelegateExample.cs" />

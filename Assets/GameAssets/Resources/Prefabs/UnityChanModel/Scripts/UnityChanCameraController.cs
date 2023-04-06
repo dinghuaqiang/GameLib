@@ -25,7 +25,7 @@ namespace UnityChan
 		MBD_MIDDLE,
 	};
 
-	public class CameraController : MonoBehaviour
+	public class UnityChanCameraController : MonoBehaviour
 	{
 		[SerializeField]
 		private Vector3 focus = Vector3.zero;
