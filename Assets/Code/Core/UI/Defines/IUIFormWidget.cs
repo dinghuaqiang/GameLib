@@ -26,7 +26,7 @@ namespace GameLib.Core.UI
         /// <summary>
         /// 该窗体的深度，就是这个窗体GameObject的深度
         /// </summary>
-        int ZStartDepth { get; }
+        int ZStartDepth { get; set; }
 
         int ZEndDepth { get; }
 
@@ -38,7 +38,7 @@ namespace GameLib.Core.UI
         /// <summary>
         /// 当前窗体是否被销毁
         /// </summary>
-        bool IsDestory { get; }
+        bool IsDestroy { get; }
 
         /// <summary>
         /// 当前窗体是否激活

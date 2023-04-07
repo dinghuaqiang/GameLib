@@ -1,5 +1,6 @@
 ﻿using GameLib.Cfg.Data;
 using GameLib.Core.Event;
+using GameLib.Core.Utils;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -77,7 +78,7 @@ namespace GameLib.Core.UI
         /// <summary>
         /// 是否销毁
         /// </summary>
-        private bool _isDestory = false;
+        private bool _isDestroy = false;
 
         /// <summary>
         /// 是否挂起任务
@@ -207,14 +208,6 @@ namespace GameLib.Core.UI
             }
         }
 
-        public bool IsDestory
-        {
-            get
-            {
-                return _isDestory;
-            }
-        }
-
         public bool IsActived
         {
             get
@@ -304,6 +297,14 @@ namespace GameLib.Core.UI
                 return _isHiding;
             }
         }
+
+        public bool IsDestroy
+        {
+            get
+            {
+                return _isDestroy;
+            }
+        }
         #endregion
 
         #region 公共接口
@@ -313,7 +314,7 @@ namespace GameLib.Core.UI
         /// <param name="manager"></param>
         public void SetFormManager(IUIFormManager manager)
         {
-            _isDestory = false;
+            _isDestroy = false;
             //1. 设置当前的窗体管理器
             _formManager = manager;
             //2. 注册事件
@@ -344,7 +345,7 @@ namespace GameLib.Core.UI
             OnUnload();
             _zStartDepth = int.MaxValue;
             _zEndDepth = 0;
-            _isDestory = true;
+            _isDestroy = true;
         }
 
         public void Show(IUIFormWidget parentForm)
@@ -424,6 +425,54 @@ namespace GameLib.Core.UI
         }
 
         /// <summary>
+        /// 屏幕方向改变
+        /// </summary>
+        /// <param name="so"></param>
+        public void ScreenOrientationChanged(ScreenOrientation so)
+        {
+            OnScreenOrientationChanged(so);
+        }
+
+        /// <summary>
+        /// 屏幕分辨率的改变
+        /// </summary>
+        public void ScreenSizeChanged()
+        {
+            OnScreenSizeChanged();
+        }
+
+        /// <summary>
+        /// 设置激活状态,这个只是用于UIFormManager来调用
+        /// </summary>
+        public bool SetActive(bool isActive)
+        {
+            if (_formType == UIFormType.Normal)
+            {
+                if (_isActived != isActive)
+                {
+                    _isActived = isActive;
+                    OnActiveChanged(isActive);
+                }
+                return true;
+            }
+            return false;
+        }
+
+        //曲面屏缩放值改变
+        public void CurvedScreenScaleChanged(float value)
+        {
+            OnCurvedScreenScaleChanged(value);
+        }
+        
+        public void SetLuaBehaviour(string name)
+        {
+            _isBindLuaScript = true;
+            OnSetLuaBehaviour(name);
+        }
+        #endregion
+
+        #region 事件处理
+        /// <summary>
         /// 注册UI事件
         /// </summary>
         public void RegisterEvents()
@@ -459,47 +508,50 @@ namespace GameLib.Core.UI
         }
 
         /// <summary>
-        /// 屏幕方向改变
+        /// 注册一个事件
         /// </summary>
-        /// <param name="so"></param>
-        public void ScreenOrientationChanged(ScreenOrientation so)
+        public void RegisterEvent(int eventName, EventHandler eventHandler)
         {
-            OnScreenOrientationChanged(so);
+            AddEvents(eventName, eventHandler);
         }
 
         /// <summary>
-        /// 屏幕分辨率的改变
+        /// 注册UI事件
         /// </summary>
-        public void ScreenSizeChanged()
+        public void RegisterEvent(UIEventDefine eventName, EventHandler eventHandler)
         {
-            OnScreenSizeChanged();
+            AddEvents((int)eventName, eventHandler);
         }
 
-        public bool SetActive(bool isActive)
+        /// <summary>
+        /// 注册逻辑事件
+        /// </summary>
+        public void RegisterEvent(LogicEventDefine eventName, EventHandler eventHandler)
         {
-            if (_formType == UIFormType.Normal)
+            AddEvents((int)eventName, eventHandler);
+        }
+
+        /// <summary>
+        /// 添加事件
+        /// </summary>
+        private void AddEvents(int eventName, EventHandler eventHandler)
+        {
+            if (!_allEvents.TryGetValue(eventName, out List<EventHandler> handlerList))
             {
-                if (_isActived != isActive)
-                {
-                    _isActived = isActive;
-                    OnActiveChanged(isActive);
-                }
-                return true;
+                handlerList = new List<EventHandler>();
+                _allEvents.Add(eventName, handlerList);
             }
-            return false;
+            if (handlerList.Count > 0 && handlerList.Contains(eventHandler))
+            {
+                DevLog.LogErrorFormat("重复添加事件 FormName = {0} EventId = {1}", Name, eventName);
+                return;
+            }
+            handlerList.Add(eventHandler);
         }
+        #endregion
 
-        //曲面屏缩放值改变
-        public void CurvedScreenScaleChanged(float value)
-        {
-            OnCurvedScreenScaleChanged(value);
-        }
-        
-        public void SetLuaBehaviour(string name)
-        {
-            _isBindLuaScript = true;
-            OnSetLuaBehaviour(name);
-        }
+        #region 私有函数
+
         #endregion
 
         #region 纯虚函数，用于子类继承

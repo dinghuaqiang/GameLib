@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Text;
+using UnityEngine;
 
 namespace GameLib.Core.Utils
 {
@@ -10,7 +11,9 @@ namespace GameLib.Core.Utils
         /// <summary>
         /// 日志开关
         /// </summary>
-        public static bool IS_SHOW_LOG = true; 
+        public static bool IS_SHOW_LOG = true;
+
+        private static StringBuilder _sb = new StringBuilder();
 
         public static void LogWithColor(string msg, Color color)
         {
@@ -34,6 +37,12 @@ namespace GameLib.Core.Utils
         {
             if (!IS_SHOW_LOG) { return; }
             Debug.Log(msg);
+        }
+
+        public static void LogFormat(string format, params object[] args)
+        {
+            if (!IS_SHOW_LOG) { return; }
+            Debug.LogFormat(format, args);
         }
 
         public static void LogWarning(string msg)
@@ -63,6 +72,22 @@ namespace GameLib.Core.Utils
         public static void LogError(string msg) 
         {
             Debug.LogError(msg);
+        }
+
+        public static void LogError(params object[] msg)
+        {
+            lock (_sb)
+            {
+                if (msg != null)
+                {
+                    _sb.Remove(0, _sb.Length);
+                    for (int i = 0; i < msg.Length; i++)
+                    {
+                        _sb.Append(msg[i]);
+                    }
+                    Debug.LogError(_sb.ToString());
+                }
+            }
         }
 
         public static void LogErrorFormat(string format, params object[] args)

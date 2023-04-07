@@ -34,11 +34,6 @@ namespace GameLib.Core.UI
         float CurvedScreenScale { get; set; }
 
         /// <summary>
-        /// UI的整体透明度，用于隐藏界面UI
-        /// </summary>
-        float GlobalFormAlpha { get; set; }
-
-        /// <summary>
         /// UI的2D相机
         /// </summary>
         Camera UI2DCamera { get; }

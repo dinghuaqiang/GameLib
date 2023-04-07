@@ -137,7 +137,7 @@ namespace GameLib.Core.UI
         /// <summary>
         /// 查找当前窗体的所有父窗体
         /// </summary>
-        public void GetParentForms(string formName, ref List<string> forms)
+        public void GetParentForms(string formName, List<string> forms)
         {
             UIFormConfigInfo cfg = UIFormConfigInfo.Instance.Get(formName);
             if (cfg != null && cfg.Parents.Count > 0)
@@ -161,7 +161,7 @@ namespace GameLib.Core.UI
                     {
                         forms.Add(_requestFormNames[i]);
                     }
-                    GetParentForms(_requestFormNames[parentIdx], ref forms);
+                    GetParentForms(_requestFormNames[parentIdx], forms);
                 }
             }
         }
