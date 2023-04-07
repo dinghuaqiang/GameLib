@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Root>
+	<!-- SpawnPool节点的属性描述为:IsAutoCleaner是否启动自动清理器,PrefabLiftTime每个Prefab的生存期(秒),CleanerTick自动清理的Tick是多少(秒) -->
+	<!-- PrefabPool节点的属性描述为:CullDespawned是否在实例对象回收时执行清理操作,CullAbove执行清理后最多剩余多少实例对象,CullDelay执行清理的延迟(秒),CullMaxPerPass一次最多清理多少对象-->	
+	<SpawnPool Name="vfx" StartupAutoCleaner="1" PrefabLiftTime="600" CleanerTick = "60">    
+		<PrefabPool Name="vfx" CullDespawned="0" CullAbove="5"  CullDelay = "5"  CullMaxPerPass="5"/>
+	</SpawnPool>
+	<SpawnPool Name="scene" StartupAutoCleaner="1" PrefabLiftTime="600" CleanerTick = "60">
+		<PrefabPool Name="scene" CullDespawned="0" CullAbove="5"  CullDelay = "5"  CullMaxPerPass="5"/>		
+	</SpawnPool>
+	<SpawnPool Name="ui"  StartupAutoCleaner="0" PrefabLiftTime="60" CleanerTick = "30">
+		<PrefabPool Name="ui" CullDespawned="0" CullAbove="1"  CullDelay = "5"  CullMaxPerPass="5"/>
+	</SpawnPool>
+	<SpawnPool Name="atlas"  StartupAutoCleaner="1" PrefabLiftTime="120" CleanerTick = "30">
+		<PrefabPool Name="atlas" CullDespawned="0" CullAbove="1"  CullDelay = "5"  CullMaxPerPass="5"/>
+	</SpawnPool>
+	<SpawnPool Name="font"  StartupAutoCleaner="1" PrefabLiftTime="120" CleanerTick = "30">
+		<PrefabPool Name="font" CullDespawned="0" CullAbove="1"  CullDelay = "5"  CullMaxPerPass="5"/>		
+	</SpawnPool>
+</Root>
