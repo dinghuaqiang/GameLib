@@ -88,6 +88,7 @@
     <Compile Include="Assets\Code\Core\AssetsManager\Request\File\RequestPathUtil.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Request\File\ResourceFileRequest.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\Request\File\UnityWebFileRequest.cs" />
+    <Compile Include="Assets\Code\Core\AssetsManager\SpawnPool\PoolSetting\PoolSettingManager.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\SpawnPool\PoolSetting\SettingXml\PoolSettingsXmlReader.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\SpawnPool\PoolSetting\SettingXml\SpawnPoolSettings.cs" />
     <Compile Include="Assets\Code\Core\AssetsManager\SpawnPool\SpawnPoolExternal.cs" />
