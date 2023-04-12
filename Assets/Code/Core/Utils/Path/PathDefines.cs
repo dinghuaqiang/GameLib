@@ -1,4 +1,4 @@
-﻿namespace GameLib.Core.Utils.Path
+﻿namespace GameLib.Core.Utils
 {
     /// <summary>
     /// 常用路径定义

@@ -1,6 +1,6 @@
 ﻿using GameLib.Core.Base;
 using GameLib.Core.Support;
-using GameLib.Core.Utils.Path;
+using GameLib.Core.Utils;
 using System;
 using System.Security;
 using FFileReader = GameLib.Core.Utils.FFileReader;

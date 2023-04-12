@@ -1,5 +1,6 @@
 ﻿using GameLib.Core.Asset.CachePool;
 using GameLib.Core.Base;
+using GameLib.Core.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,7 +31,7 @@ namespace GameLib.Core.Asset
         #region//静态构造函数
         static UIPoolAssetsLoader()
         {
-            _formPool = SpawnPoolManager.ShareInstance.GetSpawnPool(SpawnPoolNameCode.UI);
+            _formPool = SpawnPoolManager.Instance.GetSpawnPool(SpawnPoolNameCode.UI);
         }
         #endregion
 
@@ -343,7 +344,7 @@ namespace GameLib.Core.Asset
                     return true;
                 }
                 _formDict.Remove(filePath);
-                FLogger.LogError("Get value from UI dict is null, remove key : ", filePath);
+                DevLog.LogError("Get value from UI dict is null, remove key : ", filePath);
             }
 
             pool.NewGameObject(filePath, x =>
@@ -360,7 +361,7 @@ namespace GameLib.Core.Asset
                     else
                     {
                         _formDict[filePath] = null;
-                        FLogger.LogErrorFormat("Load prefab {0} failed!", filePath);
+                        DevLog.LogErrorFormat("Load prefab {0} failed!", filePath);
                     }
                 }
                 if (asyncCallback != null) asyncCallback(uiTransform);

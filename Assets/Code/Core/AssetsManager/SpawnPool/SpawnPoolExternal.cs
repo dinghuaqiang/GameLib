@@ -159,7 +159,9 @@ namespace GameLib.Core.Asset.CachePool
         /// <returns></returns>
         public bool IsInPool(string filePath)
         {
-            return PrefabAssetManager.SharedInstance.IsLoaded(filePath);
+            return false;
+            //TODO 
+            //return PrefabAssetManager.SharedInstance.IsLoaded(filePath);
         }
 
         /// <summary>
@@ -183,22 +185,22 @@ namespace GameLib.Core.Asset.CachePool
         }
 
         #region 私有函数
-        /// <summary>
-        /// 创建一个PrefabPool
-        /// </summary>        
-        /// <param name="prefab"></param>
-        private void CreatePrefabPool(PrefabAssetInfo info)
-        {
-            var prefab = _spawnPool.GetPrefab(info.AssetObject);
-            if (prefab == null)
-            {
-                PrefabPool pool = new Support.PrefabPool(info.AssetObject.transform);
-                pool.PrefabAssetPath = info.AssetPath;
-                _spawnPool.CreatePrefabPool(pool);
-                PoolSettingManager.ShareInstance.InitPoolSettings(pool);
-                pool.OnPostDestroy = OnPostPoolDestory;
-            }
-        }
+        ///// <summary>
+        ///// 创建一个PrefabPool
+        ///// </summary>        
+        ///// <param name="prefab"></param>
+        //private void CreatePrefabPool(PrefabAssetInfo info)
+        //{
+        //    var prefab = _spawnPool.GetPrefab(info.AssetObject);
+        //    if (prefab == null)
+        //    {
+        //        PrefabPool pool = new Support.PrefabPool(info.AssetObject.transform);
+        //        pool.PrefabAssetPath = info.AssetPath;
+        //        _spawnPool.CreatePrefabPool(pool);
+        //        PoolSettingManager.ShareInstance.InitPoolSettings(pool);
+        //        pool.OnPostDestroy = OnPostPoolDestory;
+        //    }
+        //}
 
         /// <summary>
         /// 从缓存池获取Prefab
@@ -233,8 +235,9 @@ namespace GameLib.Core.Asset.CachePool
         /// <param name="pool"></param>
         private void OnPostPoolDestory(PrefabPool pool)
         {
+            //TODO 
             //清理Prefab的资源
-            PrefabAssetManager.SharedInstance.UnLoadPrefab(pool.PrefabAssetPath, null, true);
+            //PrefabAssetManager.SharedInstance.UnLoadPrefab(pool.PrefabAssetPath, null, true);
         }
         #endregion
     }
