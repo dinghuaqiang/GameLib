@@ -77,5 +77,10 @@ namespace GameLib.Core.Asset.CachePool
             PoolSettingManager.ShareInstance.Uninitialize();
         }
         #endregion
+
+        public SpawnPoolExternal GetSpawnPool(SpawnPoolNameCode poolNameCode)
+        {
+            return null;
+        }
     }
 }

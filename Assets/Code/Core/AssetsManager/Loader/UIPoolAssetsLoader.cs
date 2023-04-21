@@ -187,7 +187,7 @@ namespace GameLib.Core.Asset
         public static void UnloadAtlas(string atlasName, int index, Transform atlasTrans)
         {
             string path = AtlasPath(atlasName, index);
-            PrefabAssetManager.SharedInstance.UnLoadPrefab(path, null, false);
+            //PrefabAssetManager.SharedInstance.UnLoadPrefab(path, null, false);
         }
 
         //卸载字体
@@ -224,78 +224,80 @@ namespace GameLib.Core.Asset
         //图集名字合成
         public static string AtlasName(string atlasName, int index = -1)
         {
+            return "";
             if (index < 0)
             {
                 return atlasName;
             }
             else
             {
-                return string.Format(AssetConstDefine.UIAtlasNameEx, atlasName, index);
+                //return string.Format(AssetConstDefine.UIAtlasNameEx, atlasName, index);
 
             }
         }
         //图集的路径
         public static string AtlasPath(string atlasName, int index = -1)
         {
+            return "";
             if (index < 0)
             {
                 var idx = atlasName.LastIndexOf('_');
                 if (idx > 0 && idx < atlasName.Length - 1)
                 {
-                    if (!LanguageSystem.UseLang)
-                    {
-                        return string.Format(AssetConstDefine.PathUIAtlasEx,
-                            atlasName.Substring(0, idx),
-                            atlasName.Substring(idx + 1, atlasName.Length - idx - 1));
-                    }
-                    else
-                    {
-                        return string.Format(AssetConstDefine.PathUIAtlasEx_LANG,
-                            atlasName.Substring(0, idx),
-                            atlasName.Substring(idx + 1, atlasName.Length - idx - 1),
-                            LanguageSystem.LangPostfix
-                            );
-                    }
+                    //if (!LanguageSystem.UseLang)
+                    //{
+                    //    return string.Format(AssetConstDefine.PathUIAtlasEx,
+                    //        atlasName.Substring(0, idx),
+                    //        atlasName.Substring(idx + 1, atlasName.Length - idx - 1));
+                    //}
+                    //else
+                    //{
+                    //    return string.Format(AssetConstDefine.PathUIAtlasEx_LANG,
+                    //        atlasName.Substring(0, idx),
+                    //        atlasName.Substring(idx + 1, atlasName.Length - idx - 1),
+                    //        LanguageSystem.LangPostfix
+                    //        );
+                    //}
                 }
                 else
                 {
-                    if (!LanguageSystem.UseLang)
-                    {
-                        return string.Format(AssetConstDefine.PathUIAtlas, atlasName);
-                    }
-                    else
-                    {
-                        return string.Format(AssetConstDefine.PathUIAtlas_LANG, atlasName, LanguageSystem.Lang);
-                    }
+                    //if (!LanguageSystem.UseLang)
+                    //{
+                    //    return string.Format(AssetConstDefine.PathUIAtlas, atlasName);
+                    //}
+                    //else
+                    //{
+                    //    return string.Format(AssetConstDefine.PathUIAtlas_LANG, atlasName, LanguageSystem.Lang);
+                    //}
 
 
                 }
             }
             else
             {
-                if (!LanguageSystem.UseLang)
-                {
-                    return string.Format(AssetConstDefine.PathUIAtlasEx, atlasName, index);
-                }
-                else
-                {
-                    return string.Format(AssetConstDefine.PathUIAtlasEx_LANG, atlasName, index, LanguageSystem.Lang);
-                }
+                //if (!LanguageSystem.UseLang)
+                //{
+                //    return string.Format(AssetConstDefine.PathUIAtlasEx, atlasName, index);
+                //}
+                //else
+                //{
+                //    return string.Format(AssetConstDefine.PathUIAtlasEx_LANG, atlasName, index, LanguageSystem.Lang);
+                //}
 
             }
         }
         //字体的路径
         public static string FontPath(string fontName)
         {
-            if (!LanguageSystem.UseLang)
-            {
-                return string.Format(AssetConstDefine.PathUIFont, fontName);
-            }
-            else
-            {
-                return string.Format(AssetConstDefine.PathUIFont_LANG, fontName, LanguageSystem.Lang);
-            }
-
+            //if (!LanguageSystem.UseLang)
+            //{
+            //    return string.Format(AssetConstDefine.PathUIFont, fontName);
+            //}
+            //else
+            //{
+            //    return string.Format(AssetConstDefine.PathUIFont_LANG, fontName, LanguageSystem.Lang);
+            //}
+            return "";
         }
         #endregion
 
@@ -309,19 +311,20 @@ namespace GameLib.Core.Asset
         /// <returns></returns>
         private static bool LoadAssetPrefab(string path, GAction<Transform> asyncCallback)
         {
-            return PrefabAssetManager.SharedInstance.LoadPrefab(path, x =>
-            {
+            return true;
+            //return PrefabAssetManager.SharedInstance.LoadPrefab(path, x =>
+            //{
 
-                //FLogger.DebugLogError("UIPoolAssetsLoader.LoadAssetPrefab:", path);
-                if (x != null && x.AssetObject != null && !x.IsEmptyAsset)
-                {
-                    asyncCallback(x.AssetObject.transform);
-                }
-                else
-                {
-                    asyncCallback(null);
-                }
-            }, true);
+            //    //FLogger.DebugLogError("UIPoolAssetsLoader.LoadAssetPrefab:", path);
+            //    if (x != null && x.AssetObject != null && !x.IsEmptyAsset)
+            //    {
+            //        asyncCallback(x.AssetObject.transform);
+            //    }
+            //    else
+            //    {
+            //        asyncCallback(null);
+            //    }
+            //}, true);
         }
 
         /// <summary>
@@ -374,14 +377,15 @@ namespace GameLib.Core.Asset
         //窗体以及预制的路径
         public static string FormPrefabPath(string formName, string prefabName)
         {
-            if (LanguageSystem.UseLang)
-            {
-                return string.Format(AssetConstDefine.PathUIForm_LANG, formName, prefabName, LanguageSystem.Lang);
-            }
-            else
-            {
-                return string.Format(AssetConstDefine.PathUIForm, formName, prefabName);
-            }
+            return "";
+            //if (LanguageSystem.UseLang)
+            //{
+            //    return string.Format(AssetConstDefine.PathUIForm_LANG, formName, prefabName, LanguageSystem.Lang);
+            //}
+            //else
+            //{
+            //    return string.Format(AssetConstDefine.PathUIForm, formName, prefabName);
+            //}
         }
 
         //把所有非活跃窗体回收到Pool中

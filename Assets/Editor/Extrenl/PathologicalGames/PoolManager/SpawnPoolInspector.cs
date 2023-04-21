@@ -11,7 +11,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using PathologicalGames;
+using GameLib.Core.Support;
 
 
 // Only compile if not using Unity iPhone
@@ -27,23 +27,21 @@ public class SpawnPoolInspector : Editor
         EditorGUI.indentLevel = 0;
         PGEditorUtils.LookLikeControls();
 
-        script.poolName = EditorGUILayout.TextField("Pool Name", script.poolName);
+        script.PoolName = EditorGUILayout.TextField("Pool Name", script.PoolName);
 
-        script.matchPoolScale = EditorGUILayout.Toggle("Match Pool Scale", script.matchPoolScale);
-        script.matchPoolLayer = EditorGUILayout.Toggle("Match Pool Layer", script.matchPoolLayer);
+        script.MatchPoolScale = EditorGUILayout.Toggle("Match Pool Scale", script.MatchPoolScale);
+        script.MatchPoolLayer = EditorGUILayout.Toggle("Match Pool Layer", script.MatchPoolLayer);
         
-        script.dontReparent = EditorGUILayout.Toggle("Don't Reparent", script.dontReparent);
-
-        script._dontDestroyOnLoad = EditorGUILayout.Toggle("Don't Destroy On Load", script._dontDestroyOnLoad);
+        script.dontDestroyOnLoad = EditorGUILayout.Toggle("Don't Destroy On Load", script.dontDestroyOnLoad);
         
-        script.logMessages = EditorGUILayout.Toggle("Log Messages", script.logMessages);
+        script.LogMessages = EditorGUILayout.Toggle("Log Messages", script.LogMessages);
 
         this.expandPrefabs = PGEditorUtils.SerializedObjFoldOutList<PrefabPool>
                             (
                                 "Per-Prefab Pool Options", 
-                                script._perPrefabPoolOptions,
+                                script.PerPrefabPoolOptions,
                                 this.expandPrefabs,
-                                ref script._editorListItemStates,
+                                ref script.EditorListItemStates,
                                 true
                             );
 
