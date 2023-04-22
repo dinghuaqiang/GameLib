@@ -392,6 +392,11 @@
     <Compile Include="Assets\Code\Logic\System\GameStates\IStateSystem.cs" />
     <Compile Include="Assets\Code\Logic\Timer\TimerSystem.cs" />
     <Compile Include="Assets\Code\PreLoad\PreLoadFormRoot.cs" />
+    <Compile Include="Assets\GameAssets\Resources\Default\Joystick\Scripts\DynamicJoystick.cs" />
+    <Compile Include="Assets\GameAssets\Resources\Default\Joystick\Scripts\FixedJoystick.cs" />
+    <Compile Include="Assets\GameAssets\Resources\Default\Joystick\Scripts\FloatingJoystick.cs" />
+    <Compile Include="Assets\GameAssets\Resources\Default\Joystick\Scripts\Joystick.cs" />
+    <Compile Include="Assets\GameAssets\Resources\Default\Joystick\Scripts\VariableJoystick.cs" />
     <Compile Include="Assets\GameAssets\Resources\GameUI\UIMainForm\Scripts\UIMainForm.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\GameAssets\Resources\Prefabs\UnityChanModel\Scripts\FaceUpdate.cs" />

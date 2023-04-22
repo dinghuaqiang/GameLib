@@ -35,8 +35,10 @@ namespace Assets.Test.PlayerMove
 
         void Update()
         {
-            float h = Input.GetAxis("Horizontal");
-            float v = Input.GetAxis("Vertical");
+            //float h = Input.GetAxis("Horizontal");
+            //float v = Input.GetAxis("Vertical");
+            float h = VariableJoystick.Instance.Horizontal;
+            float v = VariableJoystick.Instance.Vertical;
             if (h != 0 || v != 0)
             {
                 _dir = new Vector3(-h, 0, -v);
